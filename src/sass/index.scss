@@ -1,28 +1,3 @@
-// @import './common';
-// @import './gear';
-:root {
-  --font-family: 'DM Sans', sans-serif;
-  --second-family: 'Titan One', sans-serif;
-  --strong-red: #d41443;
-  /* background hero + some */
-  --pale-pink: #ffb8ca;
-  --pale-red: #ffa5ba;
-  /* background how-its-made + footer */
-  --very-pale-red: #fff5f6;
-  --very-soft-orange: #f0d1a5;
-  --very-soft-green: #c2e297;
-  /* background comentariu */
-  --very-light-gray: #fafafa;
-  /* social links fill  */
-  --very-soft-red: #fea5bb;
-}
-.test {
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  height: 8vw;
-}
 // a se muta in josul paginii
 @media screen and (max-width: 320px) {
 }
