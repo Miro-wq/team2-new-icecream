@@ -1,0 +1,226 @@
+:root {
+    --font-family: "DM Sans", sans-serif;
+    --second-family: "Titan One", sans-serif;
+    --strong-red: #d41443;
+    /* background hero + some */
+    --pale-pink: #ffb8ca;
+    --pale-red: #ffa5ba;
+    /* background how-its-made + footer */
+    --very-pale-red: #fff5f6;
+    --very-soft-orange: #f0d1a5;
+    --very-soft-green: #c2e297;
+    /* background comentariu */
+    --very-light-gray: #fafafa;
+    /* social links fill  */
+    --very-soft-red: #fea5bb;
+    --white: #ffffff;
+    --grey: #ecebeb;
+}
+
+.global-header {
+    background-color: var(--pale-pink);
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 16px;
+}
+
+.header svg {}
+
+ul {
+    list-style-type: none;
+}
+
+.header ul {
+    display: flex;
+    padding: 0;
+    overflow: visible;
+    gap: 35px;
+}
+
+.header button {
+    border-radius: 22px;
+    width: 159px;
+    height: 44px;
+    border-width: 0px;
+    background-color: var(--white);
+    color: var(--strong-red);
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+}
+
+.header button:hover {
+    background-color: var(--grey);
+}
+
+/* .header h1 {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 38px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+} */
+
+.ice-cream-with {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 38px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--white);
+    line-height: 90%;
+    text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.passion {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 58px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--strong-red);
+    line-height: 90%;
+    text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+h1 span {
+    display: flex;
+}
+
+.global-header {
+    height: 664px;
+    position: relative;
+    max-width: 1280px;
+    padding-left: 16px;
+}
+
+.global-header p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: var(--white);
+}
+
+.arrow-btn {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    border-width: 0px;
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+}
+
+.arrow-btn svg {
+    width: 26px;
+    height: 26px;
+    fill: var(--strong-red);
+}
+
+.hero-jug {
+    display: flex;
+    flex: column;
+    align-items: center;
+}
+
+.hero-buttons ul {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    border-width: 0px;
+    padding-left: 0px;
+}
+
+.hero-products {
+    border-radius: 20px;
+    width: 107px;
+    height: 40px;
+    background-color: var(--strong-red);
+    color: var(--white);
+    border-width: 0px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+}
+
+.hero-howitsmade {
+    border-radius: 20px;
+    width: 138px;
+    height: 40px;
+    background-color: var(--white);
+    border-width: 0px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+}
+
+.hero-howitsmade:hover {
+    background-color: var(--grey);
+}
+
+.hero {
+    display: flex;
+}
+
+.hero-right {
+    display: flex;
+}
+
+.tasty {
+    position: absolute;
+    right: 16px;
+    bottom: 0px;
+}
+
+.hero-icecream {
+    position: absolute;
+    right: 328px;
+    bottom: 0px;
+    background: var(--pale-red);
+}
+
+.cafes-trucks {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 16px;
+}
+
+.cafes {
+    display: flex;
+    flex-direction: column;
+}
+
+.cafes-trucks li :first-child {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 46px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-align: right;
+    color: var(--strong-red);
+}
+
+.cafes-trucks li :last-child {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    text-align: right;
+    color: var(--white);
+}
+
+.food-trucks {
+    display: flex;
+    flex-direction: column;
+    width: 30px;
+    height: 30px;
+}
