@@ -16,23 +16,27 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./sass/index.scss" />
-    <link rel="stylesheet" href="./sass/header-hero.scss" />
-    <link rel="stylesheet" href="./sass/products.css" />
   </head>
   <body>
     <header>
+      <include src="../src/partials/mobile-menu.html"></include>
       <include src="../src/partials/header-hero.html"></include>
     </header>
     <main>
       <include src="../src/partials/products.html"></include>
+      <include src="../src/partials/section2.html"></include>
     </main>
     <footer>
       <!-- footer sections -->
+      <include src="../src/partials/contacts.html"></include>
     </footer>
-    <script>
-      // sectiune pentru scripturi si modal
-    </script>
-    <!-- <h1>Example title</h1> -->
-    <h1 class="test">Work in progress</h1>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

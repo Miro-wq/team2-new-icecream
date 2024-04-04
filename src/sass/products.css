@@ -1,196 +1,190 @@
-:root {
-
-    --font-family: "DM Sans", sans-serif;
-    --second-family: "Titan One", sans-serif;
-    --strong-red: #d41443;
-    /* background hero + some */
-    --pale-pink: #ffb8ca;
-    --pale-red: #ffa5ba;
-    /* background how-its-made + footer */
-    --very-pale-red: #fff5f6;
-    --very-soft-orange: #f0d1a5;
-    --very-soft-green: #c2e297;
-    /* background comentariu */
-    --very-light-gray: #fafafa;
-    /* social links fill  */
-    --very-soft-red: #fea5bb;
-
-}
+/* :root { */
+/* --font-family: "DM Sans", sans-serif; */
+/* --second-family: "Titan One", sans-serif; */
+/* --strong-red: #d41443; */
+/* background hero + some */
+/* --pale-pink: #ffb8ca; */
+/* --pale-red: #ffa5ba; */
+/* background how-its-made + footer */
+/* --very-pale-red: #fff5f6; */
+/* --very-soft-orange: #f0d1a5; */
+/* --very-soft-green: #c2e297; */
+/* background comentariu */
+/* --very-light-gray: #fafafa; */
+/* social links fill  */
+/* --very-soft-red: #fea5bb; */
+/* } */
 
 .page {
-    max-width: 768px;
-
+  max-width: 768px;
 }
 
 .title {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .title h3 {
-    color: var(--pale-red);
-    font-size: 18px;
-    font-family: var(--second-family);
-    font-weight: 400;
+  color: var(--pale-red);
+  font-size: 18px;
+  font-family: var(--second-family);
+  font-weight: 400;
 }
 
 .title h2 {
-    color: var(--strong-red);
-    font-size: 34px;
-    margin-top: 0;
-    font-family: var(--second-family);
-    font-weight: 400;
-    letter-spacing: 2px;
+  color: var(--strong-red);
+  font-size: 34px;
+  margin-top: 0;
+  font-family: var(--second-family);
+  font-weight: 400;
+  letter-spacing: 2px;
 }
 
-
-
 .products li {
-    list-style: none;
+  list-style: none;
 }
 
 .products h3 {
-    color: white;
-    font-family: var(--second-family);
-    font-size: 20px;
-    font-weight: 400;
-    letter-spacing: 2px;
+  color: white;
+  font-family: var(--second-family);
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 2px;
 }
 
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 60px;
-    margin-right: 20px;
-    margin-left: -20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 60px;
+  margin-right: 20px;
+  margin-left: -20px;
 }
 
 .ice-cream {
-    background-color: var(--pale-pink);
-    border-radius: 30px;
-    height: 485px;
-    width: 280px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    padding-top: 100px;
-    margin-top: 80px;
-    text-align: center;
-    position: relative;
+  background-color: var(--pale-pink);
+  border-radius: 30px;
+  height: 485px;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 100px;
+  margin-top: 80px;
+  text-align: center;
+  position: relative;
 }
 
 .ice-cream p {
-    padding: 0 30px;
-    color: white;
-    font-family: var(--font-family);
-    font-weight: 700;
-    font-size: 14px;
-    letter-spacing: 1px;
+  padding: 0 30px;
+  color: white;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1px;
 }
 
 .ice {
-    position: absolute;
-    bottom: 70%;
-    height: 280px;
-    width: 280px;
+  position: absolute;
+  bottom: 70%;
+  height: 280px;
+  width: 280px;
 }
 
 .ice-cream h3 {
-    margin-top: 20%;
+  margin-top: 20%;
 }
 
 .dots {
-    width: 26px;
-    height: 6px;
+  width: 26px;
+  height: 6px;
 }
 
 .arrow {
-    width: 40px;
-    height: 40px;
-    padding: 10px;
-    fill: var(--strong-red);
-    background-color: white;
-    border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  fill: var(--strong-red);
+  background-color: white;
+  border-radius: 50%;
 }
 
 .coffee {
-    background-color: var(--very-soft-orange);
-    border-radius: 30px;
-    height: 485px;
-    width: 280px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    padding-top: 100px;
-    margin-top: 80px;
-    text-align: center;
-    position: relative;
+  background-color: var(--very-soft-orange);
+  border-radius: 30px;
+  height: 485px;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 100px;
+  margin-top: 80px;
+  text-align: center;
+  position: relative;
 }
 
 .coffee p {
-    padding: 0 29px;
-    color: white;
-    font-family: var(--font-family);
-    font-weight: 700;
-    font-size: 14px;
-    letter-spacing: 1px;
+  padding: 0 29px;
+  color: white;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1px;
 }
 
 .brew {
-    position: absolute;
-    bottom: 70%;
-    height: 280px;
-    width: 280px;
+  position: absolute;
+  bottom: 70%;
+  height: 280px;
+  width: 280px;
 }
 
 .coffee h3 {
-    margin-top: 20%;
+  margin-top: 20%;
 }
 
-
 .milkshake {
-    background-color: var(--very-soft-green);
-    border-radius: 30px;
-    height: 485px;
-    width: 280px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    padding-top: 100px;
-    margin-top: 80px;
-    text-align: center;
-    position: relative;
+  background-color: var(--very-soft-green);
+  border-radius: 30px;
+  height: 485px;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 100px;
+  margin-top: 80px;
+  text-align: center;
+  position: relative;
 }
 
 .milkshake p {
-    padding: 0 22px;
-    color: white;
-    font-family: var(--font-family);
-    font-weight: 700;
-    font-size: 14px;
-    letter-spacing: 1px;
+  padding: 0 22px;
+  color: white;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1px;
 }
 
 .shake {
-    position: absolute;
-    bottom: 70%;
-    height: 280px;
-    width: 280px;
+  position: absolute;
+  bottom: 70%;
+  height: 280px;
+  width: 280px;
 }
 
 .milkshake h3 {
-    margin-top: 20%;
+  margin-top: 20%;
 }
 
 .arrow:hover,
 .arrow:focus {
-    fill: #ffffff;
-    background: var(--strong-red);
+  fill: #ffffff;
+  background: var(--strong-red);
 }
