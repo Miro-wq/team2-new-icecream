@@ -1,0 +1,95 @@
+.howitsmade-section {
+    font-family: var(--font-family);
+}
+
+.howitsmade-background {
+    background-color:var(--very-pale-red);
+    background-image: url("../images/howitsmade-milk-splash.png");
+    color: var(--strong-red);
+    width: 1200px;
+    height: 521px;
+    top: 1953px;
+    gap: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 0;
+
+}
+
+.subtitle {
+    font-family: var(--second-family);
+    color: var(--pale-red);
+    text-align: center;
+    flex-direction:column;
+    display: flex;
+    justify-content: center;
+
+}
+
+.howitsmade-title {
+    font-family: var(--second-family);
+    color: var(--strong-red);
+    font-size: 58px;
+    font-weight: 400;
+    line-height: 66.41px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    flex-direction:column;
+    display: flex;
+    justify-content: center;
+}
+
+.cow-jug {
+    width: 501px;
+    height: 501px;
+    top: 1953px;
+    left: 16px;
+    gap: 0px;
+    opacity: 0px;
+    display: flex;
+    justify-items: left;
+    position: absolute;
+    top: 236px;
+    right: 683px;
+    bottom: 492px;
+    left: 16px;
+}
+
+.first-paragraf {
+    font-family: var(--font-family);
+    color: #000000;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28.16px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    display:flex;
+    justify-content: right;
+}
+
+.second-paragraph { 
+    font-family: var(--font-family);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 27.16px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    display:flex;
+    justify-content: right;
+}
+
+.howitsmade-btn {
+    width: 176px;
+    height: 44px;
+    top: 2349px;
+    left: 616px;
+    gap: 0px;
+    border-radius: 22px 0px 0px 0px;
+    border: 2px solid var(----strong-red);
+    display:flex;
+    justify-content: center;
+}
