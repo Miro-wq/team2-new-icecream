@@ -3,11 +3,22 @@
 @import url(/src/sass/products.scss);
 
 @media screen and (max-width: 320px) {
-  // modal in constructie !!!
+  .header ul,
+  .header button {
+    display: none;
+  }
 }
 @media screen and (max-width: 480px) {
+  .header ul,
+  .header button {
+    display: none;
+  }
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
+  .header ul,
+  .header button {
+    display: none;
+  }
 }
 @media screen and (min-width: 769px) and (max-width: 1280px) {
   // modal in constructie !!!
