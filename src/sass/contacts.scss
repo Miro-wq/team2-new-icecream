@@ -1,0 +1,71 @@
+.footer-contact-card {
+  border: 1px solid;
+  display: flex;
+  flex-direction: column;
+  border-radius: 24px;
+  width: 280px;
+  height: 412px;
+  box-shadow: 0 8px 30px 0 rgba(212, 20, 67, 0.1);
+  background: #fff;
+  list-style-type: none;
+  margin-bottom: 20px;
+}
+
+.cafe-contact-card-title {
+  border: 1px solid;
+  width: 80px;
+  height: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--very-soft-orange);
+  color: #ffffff;
+  border-radius: 4px;
+  margin-left: 32px;
+}
+
+.food-contact-card-title {
+  border: 1px solid;
+  width: 130px;
+  height: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--very-soft-green);
+  color: #ffffff;
+  border-radius: 4px;
+  margin-left: 32px;
+}
+
+.contact-card-content {
+  list-style-type: none;
+  padding: 0px 32px;
+}
+
+.card-description {
+  color: var(--dark-grayish-red);
+}
+
+.card-program {
+  color: var(--pale-red);
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-info > a {
+  text-decoration: none;
+  color: var(--dark-grayish-red);
+}
+
+.card-section-title {
+  font-weight: 500;
+}
+
+.section-line {
+  display: flex;
+  border: 0;
+  border-bottom: 1px solid #e1e1e1;
+}
