@@ -16,13 +16,16 @@
   --white: #ffffff;
   /* button hover gray */
   --light-grayish-red: #ecebeb;
-/* location gray din footer */
-  --dark-grayish-red: #907E82
-
+  /* location gray din footer */
+  --dark-grayish-red: #907e82;
 }
 
 .global-header {
   background-color: var(--pale-pink);
+  margin: 0 auto;
+  padding-top: 37px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .header {
@@ -30,10 +33,13 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 0px 16px;
 }
 
-// .header svg {}
+.logo svg {
+  width: 199px;
+  height: 50px;
+  margin-left: 0px;
+}
 
 ul {
   list-style-type: none;
@@ -46,7 +52,17 @@ ul {
   gap: 35px;
 }
 
-.header button {
+.header-navigation a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.header-navigation a:hover {
+  color: var(--strong-red);
+  transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.buy-now-btn button {
   border-radius: 22px;
   width: 159px;
   height: 44px;
@@ -59,17 +75,18 @@ ul {
   text-align: center;
 }
 
-.header button:hover {
-  background-color: var(--grey);
+.buy-now-btn button:hover {
+  background-color: var(--light-grayish-red);
+  transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
-/* .header h1 {
-  font-family: var(--second-family);
-  font-weight: 400;
-  font-size: 38px;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-} */
+.header li {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--white);
+  z-index: 3;
+}
 
 .ice-cream-with {
   font-family: var(--second-family);
@@ -79,7 +96,7 @@ ul {
   text-transform: uppercase;
   color: var(--white);
   line-height: 90%;
-  text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  padding-top: 0px;
 }
 
 .passion {
@@ -90,7 +107,6 @@ ul {
   text-transform: uppercase;
   color: var(--strong-red);
   line-height: 90%;
-  text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
 h1 span {
@@ -101,7 +117,6 @@ h1 span {
   height: 664px;
   position: relative;
   max-width: 1280px;
-  padding-left: 16px;
 }
 
 .global-header p {
@@ -134,6 +149,15 @@ h1 span {
   align-items: center;
 }
 
+.hero-left {
+  position: absolute;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  bottom: 60px;
+}
+
 .hero-buttons ul {
   display: flex;
   flex-direction: row;
@@ -142,7 +166,7 @@ h1 span {
   padding-left: 0px;
 }
 
-.hero-products {
+.hero-products-btn {
   border-radius: 20px;
   width: 107px;
   height: 40px;
@@ -155,7 +179,7 @@ h1 span {
   text-align: center;
 }
 
-.hero-howitsmade {
+.hero-howitsmade-btn {
   border-radius: 20px;
   width: 138px;
   height: 40px;
@@ -167,64 +191,87 @@ h1 span {
   text-align: center;
 }
 
-.hero-howitsmade:hover {
-  background-color: var(--grey);
+.hero-howitsmade-btn:hover {
+  background-color: var(--light-grayish-red);
+  transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
-.hero {
-  display: flex;
+button {
+  cursor: pointer;
 }
 
-.hero-right {
-  display: flex;
+.hero-icecream {
+  position: absolute;
+  right: 149px;
+  bottom: 77px;
+  background: var(--pale-red) center;
+  width: 534px;
+  height: 534px;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.hero-icecream img {
+  position: absolute;
+  right: 179px;
+  top: 54px;
 }
 
 .tasty {
   position: absolute;
   right: 16px;
   bottom: 0px;
-}
-
-.hero-icecream {
-  position: absolute;
-  right: 328px;
-  bottom: 0px;
-  background: var(--pale-red);
+  z-index: 4;
 }
 
 .cafes-trucks {
   display: flex;
   flex-direction: column;
   position: absolute;
-  right: 16px;
+  right: 23px;
+  top: 152px;
 }
 
 .cafes {
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
 }
 
-.cafes-trucks li :first-child {
+.cafes-number,
+.trucks-number {
   font-family: var(--second-family);
   font-weight: 400;
   font-size: 46px;
   letter-spacing: 0.04em;
-  text-transform: uppercase;
   text-align: right;
   color: var(--strong-red);
+  z-index: 3;
+  padding: 8px;
 }
 
-.cafes-trucks li :last-child {
+.cafes-cafes,
+.trucks-trucks {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 14px;
   text-align: right;
   color: var(--white);
+  white-space: nowrap;
+  margin-right: 10px;
+}
+
+.circle,
+.circle2 {
+  width: 30px;
+  height: 30px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  position: absolute;
 }
 
 .food-trucks {
   display: flex;
   flex-direction: column;
-  width: 30px;
-  height: 30px;
+  align-items: flex-end;
 }

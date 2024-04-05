@@ -3,23 +3,190 @@
 @import url(/src/sass/products.scss);
 @import url(/src/sass/contacts.scss);
 @import url(/src/sass/footer.scss);
+@import url(/src/sass/reviews.scss);
 
 @media screen and (max-width: 320px) {
-  .header ul,
-  .header button {
+  .header nav {
     display: none;
+  }
+  .buy-now-btn {
+    display: none;
+  }
+
+  /* .burger-menu {
+    display: none;
+  } */
+
+  .hero-jug {
+    display: none;
+  }
+
+  .tasty {
+    display: none;
+  }
+
+  .cafes-trucks {
+    display: none;
+  }
+
+  .global-header {
+    height: 502px;
+    max-width: 768px;
+  }
+
+  .hero-icecream img {
+    position: absolute;
+    height: 410px;
+    right: 94px;
+    top: 9px;
+  }
+
+  .hero-icecream {
+    position: absolute;
+    background: var(--pale-red) center;
+    width: 346px;
+    height: 344px;
+    border-radius: 50%;
+    z-index: 2;
+    top: 83px;
+    left: 36px;
+    /* padding-top: 34px; */
   }
 }
 @media screen and (max-width: 480px) {
-  .header ul,
-  .header button {
+  .header nav {
     display: none;
+  }
+
+  .buy-now-btn {
+    display: none;
+  }
+
+  .hero-jug {
+    display: none;
+  }
+
+  .tasty {
+    display: none;
+  }
+
+  .cafes-trucks {
+    display: none;
+  }
+
+  .global-header {
+    height: 502px;
+    padding-top: 8px;
+  }
+
+  .burger-menu {
+    position: absolute;
+    right: 0px;
+    top: 27px;
+    padding-right: 16px;
+  }
+  .hero-icecream {
+    position: absolute;
+    background: var(--pale-red) center;
+    width: 346px;
+    height: 344px;
+    border-radius: 50%;
+    z-index: 2;
+    top: 83px;
+    left: 36px;
+    /* padding-top: 34px; */
   }
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
-  .header ul,
-  .header button {
+  .global-header {
+    height: 416px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 32px;
+  }
+
+  .header nav {
     display: none;
+  }
+  .hero-icecream img {
+    position: absolute;
+    height: 336px;
+    right: 118px;
+    top: 37px;
+  }
+
+  .hero-icecream {
+    position: absolute;
+    background: var(--pale-red) center;
+    width: 335px;
+    height: 333px;
+    border-radius: 50%;
+    z-index: 2;
+    top: 43px;
+    right: 185px;
+    /* padding-top: 34px; */
+  }
+
+  .hero-left {
+    position: absolute;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    bottom: 16px;
+  }
+
+  .hero-jug img {
+    height: 154px;
+  }
+
+  .tasty img {
+    height: 150px;
+  }
+
+  .hero-products-btn {
+    width: 63px;
+    height: 24px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 8px;
+    text-align: center;
+    color: var(--white);
+  }
+
+  .hero-howitsmade-btn {
+    width: 82px;
+    height: 24px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 8px;
+    text-align: center;
+    color: var(--strong-red);
+  }
+
+  .ice-cream-with {
+    font-size: 22px;
+  }
+
+  .passion {
+    font-size: 34px;
+  }
+
+  .global-header p {
+    font-size: 8px;
+  }
+
+  .cafes-trucks li :first-child {
+    font-size: 28px;
+  }
+
+  .cafes-trucks li :last-child {
+    font-size: 8px;
+  }
+
+  .cafes-trucks {
+    top: 92px;
+    right: 32px;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1280px) {
