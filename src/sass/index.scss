@@ -1,11 +1,22 @@
-// a se muta in josul paginii
+@import url(/src/sass/mobile-menu.scss);
+@import url(/src/sass/header-hero.scss);
+@import url(/src/sass/products.scss);
+
 @media screen and (max-width: 320px) {
+  // modal in constructie !!!
 }
 @media screen and (max-width: 480px) {
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
 }
 @media screen and (min-width: 769px) and (max-width: 1280px) {
+  // modal in constructie !!!
+  .container-for-mobile {
+    display: none;
+  }
 }
 @media screen and (min-width: 1281px) {
+  .container-for-mobile {
+    display: none;
+  }
 }
