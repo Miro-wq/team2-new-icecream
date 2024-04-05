@@ -4,7 +4,7 @@
 
 .howitsmade-background {
     background-color:var(--very-pale-red);
-    background: url("../images/.howitsmade-background");
+    background-image: url("../images/howitsmade-milk-splash.png");
     color: var(--strong-red);
     width: 1200px;
     height: 521px;
@@ -92,4 +92,3 @@
     border: 2px solid var(----strong-red);
     display:flex;
     justify-content: center;
-}
