@@ -6,3 +6,56 @@
   align-items: center;
   gap: 8px;
 }
+
+.testimonial-carousel {
+  max-width: 968px;
+  margin: 120px auto 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial {
+  text-align: center;
+}
+
+.testimonial p {
+  height: 138px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 186%;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #000;
+  background-color: #fafafa;
+  padding: 32px;
+}
+
+.testimonial h3 {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 186%;
+  text-align: center;
+  color: #000;
+}
+
+.icon-quotation {
+  width: 54px;
+  height: 40px;
+  fill: #e1e1e1;
+}
+
+.icon-reviews {
+  width: 32px;
+  height: 4px;
+  fill: #c7133e;
+}
+
+// pentru moment ↓
+.testimonial-2,
+.testimonial-3 {
+  display: none;
+}
+// ↑
+// mai trebui pus svg cu casuta sub emily, los angeles
