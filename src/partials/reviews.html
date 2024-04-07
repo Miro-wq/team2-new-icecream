@@ -63,7 +63,6 @@
 
 <!-- Slider reviews  section -->
 <section>
-  <input type="radio" name="slider" id="slide1" checked />
   <input type="radio" name="slider" id="slide2" />
   <input type="radio" name="slider" id="slide3" />
   <div class="slider">
@@ -86,37 +85,50 @@
       </div>
       <div class="slide">
         <img src="/src/images/testimonials2.png" alt="Client 2" />
-        <p class="underline">
-          <svg class="icon-quotation">
-            <use
-              xlink:href="/src/images/symbol-defs.svg#icon-testimonial-quotes"
-            ></use>
-          </svg>
-          Wonderfull! I love visiting your cafe. You prepare the most delicious
-          ice cream in Los Angeles! In addition, you have beautiful serving,
-          cozy atmosphere and polite staff.
-        </p>
+        <div class="underlined-container">
+          <p class="underline">
+            <svg class="icon-quotation">
+              <use
+                xlink:href="/src/images/symbol-defs.svg#icon-testimonial-quotes"
+              ></use>
+            </svg>
+            Wonderfull! I love visiting your cafe. You prepare the most
+            delicious ice cream in Los Angeles! In addition, you have beautiful
+            serving, cozy atmosphere and polite staff.
+          </p>
+        </div>
         <h3>Suzanna, New York</h3>
       </div>
       <div class="slide">
         <img src="/src/images/testimonials3.png" alt="Client 3" />
-        <p class="underline">
-          <svg class="icon-quotation">
-            <use
-              xlink:href="/src/images/symbol-defs.svg#icon-testimonial-quotes"
-            ></use>
-          </svg>
-          Awesome! I love visiting your cafe. You prepare the most delicious ice
-          cream in Los Angeles! In addition, you have beautiful serving, cozy
-          atmosphere and polite staff.
-        </p>
+        <div class="underlined-container">
+          <p class="underline">
+            <svg class="icon-quotation">
+              <use
+                xlink:href="/src/images/symbol-defs.svg#icon-testimonial-quotes"
+              ></use>
+            </svg>
+            Awesome! I love visiting your cafe. You prepare the most delicious
+            ice cream in Los Angeles! In addition, you have beautiful serving,
+            cozy atmosphere and polite staff.
+          </p>
+        </div>
         <h3>Nataly, Chicago</h3>
       </div>
     </div>
   </div>
   <div class="review-dots">
-    <label class="dot dot1" for="slide1"></label>
-    <label class="dot dot2" for="slide2"></label>
-    <label class="dot dot3" for="slide3"></label>
+    <label class="dot dot1" for="slide1">
+      <svg class="house">
+        <use href="/src/images/symbol-defs.svg#icon-little-house"></use>
+      </svg>
+      <input type="radio" name="slider" id="slide1" />
+    </label>
+    <label class="dot dot2 ellipse" for="slide2">
+      <span class="checkmark"></span>
+    </label>
+    <label class="dot dot3 ellipse" for="slide3">
+      <span class="checkmark"></span>
+    </label>
   </div>
 </section>
