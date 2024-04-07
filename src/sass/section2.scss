@@ -1,94 +1,160 @@
 .howitsmade-section {
-    font-family: var(--font-family);
+  font-family: var(--font-family);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: var(--very-pale-red);
 }
 
+.container-for-section2 {
+  //   margin-top: 60px;
+  padding-top: 60px;
+  display: flex;
+  flex-flow: column wrap;
+  text-align: center;
+}
 .howitsmade-background {
-    background-color:var(--very-pale-red);
-    background-image: url("../images/howitsmade-milk-splash.png");
-    color: var(--strong-red);
-    width: 1200px;
-    height: 521px;
-    top: 1953px;
-    gap: 0px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    padding: 0;
-
+  background-image: url('../images/howitsmade-milk-splash.png');
+  color: var(--strong-red);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  margin: 0 auto;
+  flex-wrap: wrap;
 }
 
 .subtitle {
-    font-family: var(--second-family);
-    color: var(--pale-red);
-    text-align: center;
-    flex-direction:column;
-    display: flex;
-    justify-content: center;
-
+  font-family: var(--second-family);
+  color: var(--pale-red);
+  font-weight: 400;
+  font-size: 30px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin: 0;
 }
 
 .howitsmade-title {
-    font-family: var(--second-family);
-    color: var(--strong-red);
-    font-size: 58px;
-    font-weight: 400;
-    line-height: 66.41px;
-    letter-spacing: 0.06em;
-    text-align: center;
-    flex-direction:column;
-    display: flex;
-    justify-content: center;
+  font-family: var(--second-family);
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--strong-red);
+  font-size: 58px;
+  line-height: 66.41px;
+  letter-spacing: 0.06em;
+  margin-top: 16px;
+  margin-bottom: 0;
 }
 
 .cow-jug {
-    width: 501px;
-    height: 501px;
-    top: 1953px;
-    left: 16px;
-    gap: 0px;
-    opacity: 0px;
-    display: flex;
-    justify-items: left;
-    position: absolute;
-    top: 236px;
-    right: 683px;
-    bottom: 492px;
-    left: 16px;
+  width: 501px;
+  height: 501px;
+  top: 1953px;
+  left: 16px;
+  display: flex;
+  justify-items: left;
+  top: 236px;
+  right: 683px;
+  bottom: 492px;
+  left: 16px;
 }
 
 .first-paragraf {
-    font-family: var(--font-family);
-    color: #000000;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 28.16px;
-    letter-spacing: 0.04em;
-    text-align: left;
-    display:flex;
-    justify-content: right;
+  font-family: var(--font-family);
+  color: #000000;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28.16px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  display: flex;
+  justify-content: right;
 }
 
-.second-paragraph { 
-    font-family: var(--font-family);
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 27.16px;
-    letter-spacing: 0.04em;
-    text-align: left;
-    display:flex;
-    justify-content: right;
+.second-paragraph {
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 27.16px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  display: flex;
+  justify-content: right;
 }
 
 .howitsmade-btn {
-    width: 176px;
-    height: 44px;
-    top: 2349px;
-    left: 616px;
-    gap: 0px;
-    border-radius: 22px 0px 0px 0px;
-    border: 2px solid var(----strong-red);
-    display:flex;
-    justify-content: center;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 16px;
+  width: 176px;
+  height: 44px;
+  border-radius: 22px;
+  color: var(--strong-red);
+  background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  margin-bottom: 2rem;
+}
+
+.howitsmade-btn:hover,
+.howitsmade-btn:focus {
+  background-color: var(--light-grayish-red);
+  transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.icon-list-section2 {
+  margin: 0 auto;
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 182px;
+}
+
+.svg-sec2 {
+  width: 50px;
+  height: 50px;
+  fill: var(--pale-red);
+}
+.icon-list-section2 h2 {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 48px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--strong-red);
+}
+.icon-list-section2 p {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 174%;
+  letter-spacing: 0.02em;
+  color: #000;
+}
+.one-sec2 {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 176%;
+  letter-spacing: 0.04em;
+  color: #000;
+}
+.two-sec2 {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 194%;
+  letter-spacing: 0.04em;
+  color: #907e82; /* nu este listat in root */
+}
+.right-p-cow {
+  gap: 32px;
+  display: flex;
+  flex-direction: column;
+}

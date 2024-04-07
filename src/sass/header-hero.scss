@@ -18,6 +18,9 @@
   --light-grayish-red: #ecebeb;
   /* location gray din footer */
   --dark-grayish-red: #907e82;
+  /* copyright line */
+  --copyright-line-grey: #e1e1e1;
+  --copyright-text-grey: #907e82;
 }
 
 .global-header {
@@ -236,6 +239,7 @@ button {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  margin-bottom: 15px;
 }
 
 .cafes-number,

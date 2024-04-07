@@ -1,10 +1,28 @@
-.masonry {
-  width: 1013px;
-  height: 430px;
+.cards-overlap {
+  width: 100%;
   display: flex;
-  margin: 0 auto;
-  align-items: center;
+  justify-content: center;
+}
+.masonry {
+  max-width: 1013px;
+  position: relative;
+  max-height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  z-index: 28;
+  margin-top: -4.5rem;
+  display: flex;
   gap: 8px;
+  align-items: center;
+}
+.rounded-corners {
+  border-radius: 18%;
+}
+.rebel-first {
+  margin-bottom: -1rem;
+}
+.rebel-second {
+  margin-bottom: 76px;
 }
 
 // Slider reviews section
