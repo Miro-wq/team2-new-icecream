@@ -47,6 +47,11 @@
   margin-top: 7.5rem;
 }
 
+.underlined-container {
+  padding: 32px;
+  background-color: #fafafa;
+}
+
 input[type="radio"] {
   display: none;
 }
@@ -97,19 +102,15 @@ input[type="radio"] {
   align-self: center;
 }
 .underline {
-  height: 138px;
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 16px;
-  line-height: 186%;
+  line-height: 280%;
   letter-spacing: 0.04em;
   text-align: center;
   color: #000;
-  background-color: #fafafa;
-  padding: 32px;
-  text-decoration: underline 1px solid #E1E1E1;
-  text-underline-offset: 0.8rem;
-  margin-block-end: 0;
+  margin-bottom: 0;
+  background-image: linear-gradient(to bottom, #fafafa, #fafafa 1px, transparent 0, transparent 100%), repeating-linear-gradient(0deg, #d8d8d8, #d8d8d8 1px,  0, #fafafa 50%);
   }
 
 .slide h3::before {
