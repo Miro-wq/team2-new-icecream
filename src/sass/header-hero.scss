@@ -26,9 +26,10 @@
 .global-header {
   background-color: var(--pale-pink);
   margin: 0 auto;
-  padding-top: 37px;
-  padding-left: 16px;
-  padding-right: 16px;
+  // padding-top: 37px;
+  // padding-left: 16px;
+  // padding-right: 16px;
+  padding: 3.25rem 5rem;
 }
 
 .header {
@@ -119,7 +120,7 @@ h1 span {
 .global-header {
   height: 664px;
   position: relative;
-  max-width: 1280px;
+  // max-width: 1280px;
 }
 
 .global-header p {
@@ -205,7 +206,7 @@ button {
 
 .hero-icecream {
   position: absolute;
-  right: 149px;
+  right: 14rem;
   bottom: 77px;
   background: var(--pale-red) center;
   width: 534px;
@@ -222,7 +223,7 @@ button {
 
 .tasty {
   position: absolute;
-  right: 16px;
+  right: 5rem;
   bottom: 0px;
   z-index: 4;
 }
@@ -231,7 +232,7 @@ button {
   display: flex;
   flex-direction: column;
   position: absolute;
-  right: 23px;
+  right: 5rem;
   top: 152px;
 }
 
