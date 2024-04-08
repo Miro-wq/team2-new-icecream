@@ -67,7 +67,6 @@ input[type='radio'] {
 }
 
 .review-dots {
-  text-align: center;
   margin-bottom: 7.5rem;
   display: flex;
   justify-content: center;
@@ -77,8 +76,6 @@ input[type='radio'] {
 
 .dot {
   display: inline-block;
-  width: 10px;
-  height: 10px;
   border-radius: 50%;
   background-color: transparent;
   margin: 0 5px;
@@ -86,23 +83,17 @@ input[type='radio'] {
 }
 
 .dot1 {
-  width: 24px;
-  height: 0px;
+  width: 18px;
   background-position: 0 0;
-  display: flex;
   align-items: center;
 }
 
 .dot2 {
   background-position: -10px 0;
-  width: 0px;
-  height: 0px;
 }
 
 .dot3 {
   background-position: -20px 0;
-  width: 12px;
-  height: 12px;
 }
 
 .checkmark {
@@ -115,7 +106,7 @@ input[type='radio'] {
 
 .ellipse {
   width: 15px;
-  height: 15px;
+  height: 14px;
 }
 
 .checkmark:hover {
