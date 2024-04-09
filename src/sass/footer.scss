@@ -3,6 +3,7 @@
 .contact-section {
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -60,8 +61,7 @@
 
 .contact-card-content {
   list-style-type: none;
-  width: 288px;
-  height: 458px;
+  width: 97%;
   margin-bottom: auto;
   letter-spacing: 0.07em;
 }
@@ -171,13 +171,13 @@
 }
 
 .footer-buttons {
-  // width: 378px;
-  display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-bottom: 80px;
   gap: 12px;
+  margin-bottom: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
 }
 
 .high-text {
@@ -188,7 +188,7 @@
 }
 
 .footer-homemade {
-  width: 472px;
+  // width: 472px;
   color: var(--pale-red);
   font-size: 30px;
   font-weight: 400;
@@ -199,7 +199,7 @@
 }
 
 .footer-passion {
-  width: 474px;
+  // width: 474px;
   color: var(--strong-red);
   font-size: 58px;
   font-weight: 400;
@@ -275,7 +275,7 @@
   font-family: var(--font-family);
 }
 
-hr {
+.section-line {
   // width: 1167px;
   border: 0;
   border-bottom: 1px solid var(--copyright-line-grey);

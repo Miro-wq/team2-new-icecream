@@ -1,11 +1,3 @@
-// .container-for-mobile {
-//   display: flex;
-//   justify-content: flex-end;
-//   position: absolute;
-//   z-index: 1;
-//   margin-top: 27px;
-// }
-
 .menu-toggle {
   min-height: 40px;
   min-width: 40px;
@@ -18,11 +10,7 @@
   border: none;
   border-radius: 50%;
   outline: none;
-}
-
-.menu-toggle:hover,
-.menu-toggle:focus {
-  background-color: rgba(0, 0, 0, 0.1);
+  color: var(--strong-red);
 }
 
 .menu-container {
@@ -31,7 +19,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 20px;
+  padding: 0;
   background-color: #e17992;
   z-index: 999;
   transform: translateX(100%);
@@ -40,8 +28,7 @@
 
 .menu-container.is-open {
   transform: translateX(0);
-  // width: 254px;
-  // height: 1020px;
+  padding: 0;
 }
 
 .menu-container .menu-toggle {
@@ -57,20 +44,25 @@
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 40px;
   margin-top: 70px;
 }
 
 .mobile-menu .link {
+  font-family: var(--font-family);
   font-weight: 700;
   font-size: 14px;
-  line-height: 111%;
-  letter-spacing: 0.02em;
+  display: flex;
+  width: 100%;
   text-transform: capitalize;
-  padding: 10px;
+  padding: 16px;
   text-decoration: none;
   color: #fff;
-  gap: 40px;
+  border: 1px solid #e18298;
+}
+
+.mobile-buy {
+  display: flex;
+  justify-content: center;
 }
 
 .mobile-buy .buynow {
@@ -91,4 +83,6 @@
   color: white;
   display: flex;
   justify-content: flex-end;
+  margin-bottom: 26px;
+  margin-right: 20px;
 }
