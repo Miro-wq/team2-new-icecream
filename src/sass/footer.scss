@@ -97,6 +97,11 @@
   margin-top: 32px;
 }
 
+.contact-info>a:hover {
+  color: var(--strong-red);
+  transition: 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
 .card-section-title {
   font-weight: 500;
   margin-bottom: 8px;
