@@ -26,7 +26,7 @@
 .global-header {
   background-color: var(--pale-pink);
   margin: 0 auto;
-  padding: 52px 16px;
+  padding: 40px 16px;
 }
 
 .header {
@@ -36,10 +36,14 @@
   align-items: center;
 }
 
+
+
 .logo svg {
+  position: relative;
   width: 199px;
   height: 50px;
   margin-left: 0px;
+  z-index: 5;
 }
 
 ul {
@@ -138,6 +142,11 @@ h1 span {
   justify-content: center;
 }
 
+.arrow-btn:hover {
+  background-color: var(--light-grayish-red);
+  transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
 .arrow-btn svg {
   // width: 26px;
   height: 24px;
@@ -221,7 +230,7 @@ button {
 .tasty {
   position: absolute;
   right: 16px;
-  bottom: 0px;
+  bottom: -3px;
   z-index: 4;
 }
 
