@@ -7,6 +7,41 @@
 @import url(/src/sass/section2.scss);
 
 @media screen and (max-width: 320px) {
+  // footer section=================================================
+  .footer-copyright {
+    margin: 0 auto;
+    width: 48%;
+  }
+  .feel-free,
+  .phone {
+    font-size: 12px;
+  }
+  .social-link {
+    margin: 0;
+    align-items: flex-end !important;
+  }
+  .high-text {
+    max-width: 100%;
+    margin: 0;
+  }
+  .footer-text-and-social-section {
+    justify-content: flex-end !important;
+  }
+  .footer-buttons {
+    margin-bottom: 0;
+  }
+  .footer-passion {
+    font-size: 34px;
+    margin-bottom: 40px;
+  }
+  .footer-homemade {
+    font-size: 18px;
+  }
+  .footer-contact-card {
+    margin: auto 20px;
+  }
+  // footer section end ============================================
+
   .header nav {
     display: none;
   }
@@ -55,6 +90,36 @@
   }
 }
 @media screen and (max-width: 480px) {
+  // footer section=============================================
+  .footer-copyright {
+    margin: 0 auto;
+    width: 48%;
+  }
+  .feel-free,
+  .phone {
+    font-size: 12px;
+  }
+  .social-link {
+    margin: 0;
+    align-items: center;
+  }
+  .footer-text-and-social-section {
+    justify-content: center;
+    margin: 40px 15px 0;
+    flex-wrap: wrap;
+    width: 85%;
+  }
+  .footer-buttons {
+    margin-bottom: 0;
+  }
+  .footer-passion {
+    font-size: 34px;
+    margin-bottom: 40px;
+  }
+  .footer-homemade {
+    font-size: 18px;
+  }
+  // footer section end ==========================================
   .header nav {
     display: none;
   }
@@ -95,10 +160,52 @@
     z-index: 2;
     top: 83px;
     left: 36px;
-    /* padding-top: 34px; */
   }
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
+  // footer section ====================================================
+  .footer-contact {
+    margin-bottom: 15px;
+  }
+  .footer-passion {
+    font-size: 48px;
+    margin-bottom: 40px;
+  }
+  .footer-homemade {
+    font-size: 26px;
+  }
+  .high-text {
+    max-width: 54%;
+    margin: 0;
+  }
+  .footer-text-and-social-section {
+    width: 93%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .contact-section {
+    width: fit-content;
+    justify-content: center;
+    gap: 10px;
+  }
+  .footer-contact-card {
+    max-width: 234px;
+    height: fit-content;
+    background: #fff;
+    border: none;
+    border-radius: 24px;
+    /* flex-direction: column; */
+    justify-content: center;
+    list-style-type: none;
+    display: flex;
+    box-shadow: 0 8px 30px #d414431a, 0 8px 30px #d414431a;
+  }
+  .contact-card-content {
+    margin: auto;
+    padding: 55px 13px;
+  }
+  // footer section end ====================================================
   .global-header {
     height: 416px;
     padding-left: 32px;
@@ -125,7 +232,6 @@
     z-index: 2;
     top: 43px;
     right: 185px;
-    /* padding-top: 34px; */
   }
 
   .hero-left {
