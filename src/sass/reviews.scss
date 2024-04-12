@@ -1,10 +1,12 @@
 .cards-overlap {
-  width: 100%;
+
+    max-width: 63.31rem;
   display: flex;
   justify-content: center;
 }
+
 .masonry {
-  max-width: 1013px;
+  width: 100%;
   position: relative;
   max-height: 100%;
   object-fit: cover;
@@ -15,6 +17,16 @@
   gap: 8px;
   align-items: center;
 }
+
+.dimension1 {
+  max-width: 138px;
+  height: auto;
+}
+.dimension2 {
+  max-width: 283px;
+  height: auto;
+}
+
 .rounded-corners {
   border-radius: 18%;
 }
@@ -67,7 +79,7 @@ input[type='radio'] {
 }
 
 .review-dots {
-  margin-bottom: 7.5rem;
+  margin-bottom: 219px;
   display: flex;
   justify-content: center;
   align-items: center;
