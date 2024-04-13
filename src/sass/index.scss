@@ -7,7 +7,7 @@
 @import url(/src/sass/section2.scss);
 
 @media screen and (max-width: 320px) {
-  // footer section=================================================
+  // footer========================================
   .footer-copyright {
     margin: 0 auto;
     width: 48%;
@@ -40,18 +40,13 @@
   .footer-contact-card {
     margin: auto 20px;
   }
-  // footer section end ============================================
-
+  // footer end==================================
   .header nav {
     display: none;
   }
   .buy-now-btn {
     display: none;
   }
-
-  /* .burger-menu {
-    display: none;
-  } */
 
   .hero-jug {
     display: none;
@@ -63,11 +58,6 @@
 
   .cafes-trucks {
     display: none;
-  }
-
-  .global-header {
-    height: 502px;
-    max-width: 768px;
   }
 
   .hero-icecream img {
@@ -89,8 +79,9 @@
     /* padding-top: 34px; */
   }
 }
+
 @media screen and (max-width: 480px) {
-  // footer section=============================================
+  // footer=========================================
   .footer-copyright {
     margin: 0 auto;
     width: 48%;
@@ -119,7 +110,7 @@
   .footer-homemade {
     font-size: 18px;
   }
-  // footer section end ==========================================
+  // footer end==============================================
   .header nav {
     display: none;
   }
@@ -167,14 +158,10 @@
     right: 94px;
     top: 9px;
   }
-  .menu-container {
-    width: 100%;
-    height: 100%;
-    left: 0;
-  }
 }
+
 @media screen and (min-width: 481px) and (max-width: 768px) {
-  // footer section ====================================================
+  // footer========================================================
   .footer-contact {
     margin-bottom: 15px;
   }
@@ -216,7 +203,7 @@
     margin: auto;
     padding: 55px 13px;
   }
-  // footer section end ====================================================
+  // footer end=======================================================
   .global-header {
     height: 416px;
     padding-left: 32px;
@@ -306,21 +293,34 @@
     top: 92px;
     right: 32px;
   }
-
+  // mobile ==============================================
+  .menu-container {
+    width: 254px;
+    height: 1020px;
+  }
   .container-for-mobile {
     position: absolute;
     right: 200px;
     top: 42px;
   }
+  // mobile end=======================================
 }
 @media screen and (min-width: 769px) and (max-width: 1280px) {
-  // modal in constructie !!!
-  .container-for-mobile {
+  // mobile
+  .menu-container,
+  .container-for-mobile,
+  .menu-container.is-open {
     display: none;
   }
+  // mobile end========================================
 }
+
 @media screen and (min-width: 1281px) {
-  .container-for-mobile {
+  // mobile============================================
+  .menu-container,
+  .container-for-mobile,
+  .menu-container.is-open {
     display: none;
   }
+  // mobile end=========================================
 }
