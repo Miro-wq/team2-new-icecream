@@ -1,4 +1,4 @@
-<section class="global-header">
+<section class="global-header" id="home">
   <div class="header">
     <div>
       <a href="index.html" class="logo">
@@ -9,11 +9,11 @@
     </div>
     <nav class="header-navigation">
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#">About us</a></li>
-        <li><a href="#">How it's made?</a></li>
-        <li><a href="#">Our products</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="home">Home</a></li>
+        <li><a href="#how-its-made">About us</a></li>
+        <li><a href="#how-its-made">How it's made?</a></li>
+        <li><a href="#products">Our products</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
     <div class="buy-now-btn">
@@ -44,7 +44,15 @@
       </div>
       <div class="hero-jug">
         <div>
-          <img src="images/hero-milk-jug.png" alt="milk-jug" />
+          <picture>
+            <!-- versiune desktop -->
+            <source media="(min-width: 769px)"
+              srcset="./images/desktop/hero-milk-jug-desktop.png, ./images/desktop-retina/hero-milk-jug-desktopx2.png" />
+            <!-- versiune tableta -->
+            <source media="(max-width: 768px)"
+              srcset="./images/tablet/hero-milk-jug-tablet.png, ./images/tablet-retina/hero-milk-jug-tabletX2.png" />
+            <img src="./images/desktop/hero-milk-jug-desktop.png" alt="milk-jug">
+          </picture>
         </div>
         <div>
           <p>
@@ -64,7 +72,17 @@
     </div>
     <div class="hero-right">
       <div class="hero-icecream">
-        <img src="images/hero-icecream.png" alt="icecream" />
+        <picture>
+          <!-- versiune desktop -->
+          <source media="(min-width: 769px), (min-width: 1280px)"
+            srcset="./images/desktop/hero-icecream-desktop.png, ./images/desktop-retina/hero-icecream-desktopx2.png" />
+          <!-- versiune tableta -->
+          <source media="(max-width: 768px)"
+            srcset="./images/tablet/hero-icecream-tablet.png, ./images/tablet-retina/hero-icecream-tabletX2.png" />
+          <source media="(min-width: 320px)"
+            srcset="./images/mobile/hero-ice-cream-mobile.png, ./images/mobile-retina/hero-ice-cream-mobileX2.png" />
+          <img src="./images/desktop/hero-icecream-desktop.png" alt="icecream">
+        </picture>
       </div>
       <div class="cafes-trucks">
         <ul>
@@ -81,7 +99,15 @@
         </ul>
       </div>
       <div class="tasty">
-        <img src="images/hero-soooooo-tasty.png" alt="tasty" />
+        <picture>
+          <!-- versiune desktop -->
+          <source media="(min-width: 768px)"
+            srcset="./images/desktop/hero-soooooo-desktop.png, ./images/desktop-retina/hero-soooooo-tasty-desktopx2.png" />
+          <!-- versiune tableta -->
+          <source media="(max-width: 768px)"
+            srcset="./images/tablet/hero-soooooo-tasty-tablet.png, ./images/tablet-retina/hero-soooooo-tasty-tabletX2.png" />
+          <img src="./images/desktop/hero-soooooo-desktop.png" alt="girl-eating-icecream">
+        </picture>
       </div>
     </div>
   </div>
