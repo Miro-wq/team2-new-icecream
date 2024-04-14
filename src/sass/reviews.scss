@@ -8,7 +8,6 @@
 .masonry {
   width: 100%;
   position: relative;
-  max-height: 100%;
   object-fit: cover;
   overflow: hidden;
   z-index: 28;
@@ -28,7 +27,7 @@
 }
 
 .rounded-corners {
-  border-radius: 18%;
+  border-radius: 15%;
 }
 .rebel-first {
   margin-bottom: -1rem;
