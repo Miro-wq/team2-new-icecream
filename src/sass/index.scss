@@ -1,7 +1,6 @@
 @import url(/src/sass/mobile-menu.scss);
 @import url(/src/sass/header-hero.scss);
 @import url(/src/sass/products.scss);
-// @import url(/src/sass/contacts.scss);
 @import url(/src/sass/footer.scss);
 @import url(/src/sass/reviews.scss);
 @import url(/src/sass/section2.scss);
@@ -111,6 +110,11 @@
     font-size: 18px;
   }
   // footer end==============================================
+  // section 2 =======================
+  .howitsmade-background {
+    background-image: none;
+  }
+  // section 2 end====================
   .header nav {
     display: none;
   }
@@ -193,7 +197,6 @@
     background: #fff;
     border: none;
     border-radius: 24px;
-    /* flex-direction: column; */
     justify-content: center;
     list-style-type: none;
     display: flex;
@@ -204,6 +207,11 @@
     padding: 55px 13px;
   }
   // footer end=======================================================
+  .first-box-sec2,
+  .second-box-sec2,
+  .third-box-sec2 {
+    max-width: 11em;
+  }
   .global-header {
     height: 416px;
     padding-left: 32px;
