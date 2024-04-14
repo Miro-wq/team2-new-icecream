@@ -4,13 +4,44 @@
     <p class="howitsmade-title">How It's Made</p>
   </div>
   <div class="howitsmade-background">
-    <img
+    <!-- <img
       class="cow-jug"
       src="/src/images/howitsmade-cow-jug.png"
       alt="Cowandmilk"
       width="501"
       height="501"
-    />
+    /> -->
+    <picture>
+      <!-- Desktop-->
+      <source
+        media="(min-width: 1280px)"
+        srcset="
+          /src/images/desktop/howitsmade-cow-jug-desktop.png,
+          /src/images/desktop-retina/howitsmade-cow-jug-desktopx2.png
+        "
+      />
+      <!--Tablet-->
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          /src/images/tablet/howitsmade-cow-jug-tablet.png,
+          /src/images/tablet-retina/howitsmade-cow-jug-tabletX2.png
+        "
+      />
+
+      <!-- Mobil-->
+      <source
+        media="(min-width: 320px)"
+        srcset="
+          /src/images/mobile/howitsmade-cow-jug-mobile.png,
+          /src/images/mobile-retina/howitsmade-cow-jug-mobileX2.png
+        "
+      />
+      <img
+        src="/src/images/desktop/howitsmade-cow-jug-desktop.png"
+        alt="Cowandmilk"
+      />
+    </picture>
     <div class="right-p-cow">
       <p class="one-sec2">
         Ice is a place where you will become not only a <br />

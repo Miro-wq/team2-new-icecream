@@ -7,16 +7,46 @@
 @import url(/src/sass/section2.scss);
 
 @media screen and (max-width: 320px) {
+  // footer========================================
+  .footer-copyright {
+    margin: 0 auto;
+    width: 48%;
+  }
+  .feel-free,
+  .phone {
+    font-size: 12px;
+  }
+  .social-link {
+    margin: 0;
+    align-items: flex-end !important;
+  }
+  .high-text {
+    max-width: 100%;
+    margin: 0;
+  }
+  .footer-text-and-social-section {
+    justify-content: flex-end !important;
+  }
+  .footer-buttons {
+    margin-bottom: 0;
+  }
+  .footer-passion {
+    font-size: 34px;
+    margin-bottom: 40px;
+  }
+  .footer-homemade {
+    font-size: 18px;
+  }
+  .footer-contact-card {
+    margin: auto 20px;
+  }
+  // footer end==================================
   .header nav {
     display: none;
   }
   .buy-now-btn {
     display: none;
   }
-
-  /* .burger-menu {
-    display: none;
-  } */
 
   .hero-jug {
     display: none;
@@ -28,11 +58,6 @@
 
   .cafes-trucks {
     display: none;
-  }
-
-  .global-header {
-    height: 502px;
-    max-width: 768px;
   }
 
   .hero-icecream img {
@@ -54,7 +79,38 @@
     /* padding-top: 34px; */
   }
 }
+
 @media screen and (max-width: 480px) {
+  // footer=========================================
+  .footer-copyright {
+    margin: 0 auto;
+    width: 48%;
+  }
+  .feel-free,
+  .phone {
+    font-size: 12px;
+  }
+  .social-link {
+    margin: 0;
+    align-items: center;
+  }
+  .footer-text-and-social-section {
+    justify-content: center;
+    margin: 40px 15px 0;
+    flex-wrap: wrap;
+    width: 85%;
+  }
+  .footer-buttons {
+    margin-bottom: 0;
+  }
+  .footer-passion {
+    font-size: 34px;
+    margin-bottom: 40px;
+  }
+  .footer-homemade {
+    font-size: 18px;
+  }
+  // footer end==============================================
   .header nav {
     display: none;
   }
@@ -95,10 +151,59 @@
     z-index: 2;
     top: 83px;
     left: 36px;
-    /* padding-top: 34px; */
+  }
+  .hero-icecream img {
+    position: absolute;
+    height: 410px;
+    right: 94px;
+    top: 9px;
   }
 }
+
 @media screen and (min-width: 481px) and (max-width: 768px) {
+  // footer========================================================
+  .footer-contact {
+    margin-bottom: 15px;
+  }
+  .footer-passion {
+    font-size: 48px;
+    margin-bottom: 40px;
+  }
+  .footer-homemade {
+    font-size: 26px;
+  }
+  .high-text {
+    max-width: 54%;
+    margin: 0;
+  }
+  .footer-text-and-social-section {
+    width: 93%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .contact-section {
+    width: fit-content;
+    justify-content: center;
+    gap: 10px;
+  }
+  .footer-contact-card {
+    max-width: 234px;
+    height: fit-content;
+    background: #fff;
+    border: none;
+    border-radius: 24px;
+    /* flex-direction: column; */
+    justify-content: center;
+    list-style-type: none;
+    display: flex;
+    box-shadow: 0 8px 30px #d414431a, 0 8px 30px #d414431a;
+  }
+  .contact-card-content {
+    margin: auto;
+    padding: 55px 13px;
+  }
+  // footer end=======================================================
   .global-header {
     height: 416px;
     padding-left: 32px;
@@ -125,7 +230,6 @@
     z-index: 2;
     top: 43px;
     right: 185px;
-    /* padding-top: 34px; */
   }
 
   .hero-left {
@@ -189,15 +293,34 @@
     top: 92px;
     right: 32px;
   }
+  // mobile ==============================================
+  .menu-container {
+    width: 254px;
+    height: 1020px;
+  }
+  .container-for-mobile {
+    position: absolute;
+    right: 200px;
+    top: 42px;
+  }
+  // mobile end=======================================
 }
 @media screen and (min-width: 769px) and (max-width: 1280px) {
-  // modal in constructie !!!
-  .container-for-mobile {
+  // mobile
+  .menu-container,
+  .container-for-mobile,
+  .menu-container.is-open {
     display: none;
   }
+  // mobile end========================================
 }
+
 @media screen and (min-width: 1281px) {
-  .container-for-mobile {
+  // mobile============================================
+  .menu-container,
+  .container-for-mobile,
+  .menu-container.is-open {
     display: none;
   }
+  // mobile end=========================================
 }
