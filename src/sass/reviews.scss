@@ -1,14 +1,10 @@
-.cards-overlap {
-
-    max-width: 63.31rem;
-  display: flex;
-  justify-content: center;
-}
 
 .masonry {
-  width: 100%;
+  max-width: 63.31rem;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
   position: relative;
-  object-fit: cover;
   overflow: hidden;
   z-index: 28;
   margin-top: -4.5rem;
@@ -16,13 +12,23 @@
   gap: 8px;
   align-items: center;
 }
+.masonry-item-1, 
+.masonry-item-2, 
+.masonry-item-4,
+.masonry-item-5,
+.masonry-item {
+  width: 14.3%;
+}
+.masonry-item-3{
+  width: 28.6%;
+}
 
 .dimension1 {
-  max-width: 138px;
+  max-width: 100%;
   height: auto;
 }
 .dimension2 {
-  max-width: 283px;
+  max-width: 50%;
   height: auto;
 }
 
@@ -33,7 +39,7 @@
   margin-bottom: -1rem;
 }
 .rebel-second {
-  margin-bottom: 76px;
+  margin-bottom: 1.5rem;
 }
 
 // Slider reviews section
@@ -150,15 +156,32 @@ input[type='radio'] {
   letter-spacing: 0.04em;
   text-align: center;
   color: #000;
-  margin-bottom: 0;
+  margin: 0 auto;
   background-image: linear-gradient(
       to bottom,
       #fafafa,
       #fafafa 1px,
       transparent 0,
-      transparent 100%
-    ),
-    repeating-linear-gradient(0deg, #d8d8d8, #d8d8d8 2px, 0, #fafafa 51%);
+      transparent 100%),
+    repeating-linear-gradient(0deg, #d8d8d8, #d8d8d8 2px, 0, #fafafa 50%);
+}
+
+@media only screen and (max-width: 763px) {
+  .underline {
+    background-image: repeating-linear-gradient(0deg, #d8d8d8, #d8d8d8 2px, 0, #fafafa 34%);
+  }
+}
+
+@media only screen and (max-width: 521px) {
+  .underline {
+    background-image: repeating-linear-gradient(0deg, #d8d8d8, #d8d8d8 2px, 0, #fafafa 25%);
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .underline {
+    background-image: repeating-linear-gradient(0deg, #d8d8d8, #d8d8d8 2px, 0, #fafafa 20%);
+  }
 }
 
 .slide h3::before {
