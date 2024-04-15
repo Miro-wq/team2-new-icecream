@@ -1,0 +1,2 @@
+document.querySelector(".location-btn").addEventListener("click",(function(){document.getElementById("mapsModal").style.display="block"})),document.querySelector(".franchise-btn").addEventListener("click",(function(){document.getElementById("mapsModal").style.display="block"})),document.querySelector(".close").addEventListener("click",(function(){document.getElementById("mapsModal").style.display="none"})),window.onclick=function(e){var t=document.getElementById("mapsModal");e.target===t&&(t.style.display="none")};
+//# sourceMappingURL=index.c3dcd60e.js.map
