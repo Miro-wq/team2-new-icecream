@@ -1,4 +1,3 @@
-
 .masonry {
   max-width: 63.31rem;
   display: flex;
@@ -12,14 +11,14 @@
   gap: 8px;
   align-items: center;
 }
-.masonry-item-1, 
-.masonry-item-2, 
+.masonry-item-1,
+.masonry-item-2,
 .masonry-item-4,
 .masonry-item-5,
 .masonry-item {
   width: 14.3%;
 }
-.masonry-item-3{
+.masonry-item-3 {
   width: 28.6%;
 }
 
@@ -146,13 +145,14 @@ input[type='radio'] {
   width: 85px;
   height: 85px;
   align-self: center;
+  margin-bottom: 21px;
 }
 
 .underline {
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 16px;
-  line-height: 280%;
+  line-height: 304%;
   letter-spacing: 0.04em;
   text-align: center;
   color: #000;
@@ -162,26 +162,9 @@ input[type='radio'] {
       #fafafa,
       #fafafa 1px,
       transparent 0,
-      transparent 100%),
-    repeating-linear-gradient(0deg, #d8d8d8, #d8d8d8 2px, 0, #fafafa 50%);
-}
-
-@media only screen and (max-width: 763px) {
-  .underline {
-    background-image: repeating-linear-gradient(0deg, #d8d8d8, #d8d8d8 2px, 0, #fafafa 34%);
-  }
-}
-
-@media only screen and (max-width: 521px) {
-  .underline {
-    background-image: repeating-linear-gradient(0deg, #d8d8d8, #d8d8d8 2px, 0, #fafafa 25%);
-  }
-}
-
-@media only screen and (max-width: 415px) {
-  .underline {
-    background-image: repeating-linear-gradient(0deg, #d8d8d8, #d8d8d8 2px, 0, #fafafa 20%);
-  }
+      transparent 100%
+    ),
+    repeating-linear-gradient(0deg, #d8d8d8, #d8d8d8 2px, 0, #fafafa 51%);
 }
 
 .slide h3::before {
@@ -208,4 +191,64 @@ input[type='radio'] {
   width: 54px;
   height: 40px;
   fill: #e1e1e1;
+}
+
+@media only screen and (max-width: 763px) {
+  .underline {
+    background-image: repeating-linear-gradient(
+      0deg,
+      #d8d8d8,
+      #d8d8d8 2px,
+      0,
+      #fafafa 51%
+    );
+  }
+}
+
+@media only screen and (max-width: 729px) {
+  .underline {
+    background-image: repeating-linear-gradient(
+      0deg,
+      #d8d8d8,
+      #d8d8d8 2px,
+      0,
+      #fafafa 34%
+    );
+  }
+}
+
+@media only screen and (max-width: 521px) {
+  .underline {
+    background-image: repeating-linear-gradient(
+      0deg,
+      #d8d8d8,
+      #d8d8d8 2px,
+      0,
+      #fafafa 25%
+    );
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .underline {
+    background-image: repeating-linear-gradient(
+      0deg,
+      #d8d8d8,
+      #d8d8d8 2px,
+      0,
+      #fafafa 20%
+    );
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 346px) {
+  .underline {
+    background-image: repeating-linear-gradient(
+      0deg,
+      #d8d8d8,
+      #d8d8d8 2px,
+      0,
+      #fafafa 17%
+    );
+  }
 }
