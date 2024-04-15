@@ -1,113 +1,171 @@
-<section class="global-header" id="home">
-  <div class="header">
-    <div>
-      <a href="index.html" class="logo">
-        <svg>
-          <use href="images/symbol-defs.svg#icon-header"></use>
-        </svg>
-      </a>
-    </div>
-    <nav class="header-navigation">
-      <ul>
-        <li><a href="home">Home</a></li>
-        <li><a href="#how-its-made">About us</a></li>
-        <li><a href="#how-its-made">How it's made?</a></li>
-        <li><a href="#products">Our products</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="buy-now-btn">
-      <button>Buy now &#62;</button>
-    </div>
-    <div class="container-for-mobile">
-      <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-        <svg width="24" height="24" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd"
-            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-            clip-rule="evenodd"></path>
-        </svg>
-      </button>
-    </div>
-  </div>
-  <div class="hero">
-    <div class="hero-left">
-      <h1 class="ice-cream-with">
-        <span>ice cream</span>
-        <span>made with</span>
-        <span class="passion">passion</span>
-      </h1>
-      <div class="hero-buttons">
-        <ul>
-          <li><button class="hero-products-btn">Products</button></li>
-          <li><button class="hero-howitsmade-btn">How it's made?</button></li>
-        </ul>
+<section class="full-background" id="home">
+  <div class="global-header">
+    <div class="header">
+      <div>
+        <a href="index.html" class="logo">
+          <svg>
+            <use href="images/symbol-defs.svg#icon-header"></use>
+          </svg>
+        </a>
       </div>
-      <div class="hero-jug">
-        <div>
+      <nav class="header-navigation">
+        <ul>
+          <li><a href="home">Home</a></li>
+          <li><a href="#how-its-made">About us</a></li>
+          <li><a href="#how-its-made">How it's made?</a></li>
+          <li><a href="#products">Our products</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="buy-now-btn">
+        <button>Buy now &#62;</button>
+      </div>
+      <div class="container-for-mobile">
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="hero">
+      <div class="hero-left">
+        <h1 class="ice-cream-with">
+          <span>ice cream</span>
+          <span>made with</span>
+          <span class="passion">passion</span>
+        </h1>
+        <div class="hero-buttons">
+          <ul>
+            <li><button class="hero-products-btn">Products</button></li>
+            <li><button class="hero-howitsmade-btn">How it's made?</button></li>
+          </ul>
+        </div>
+        <div class="hero-jug">
+          <div>
+            <picture>
+              <!-- versiune desktop -->
+              <source
+                media="(min-width: 769px)"
+                srcset="
+                  ./images/desktop/hero-milk-jug-desktop.png,
+                  ./images/desktop-retina/hero-milk-jug-desktopx2.png
+                "
+              />
+              <!-- versiune tableta -->
+              <source
+                media="(max-width: 768px)"
+                srcset="
+                  ./images/tablet/hero-milk-jug-tablet.png,
+                  ./images/tablet-retina/hero-milk-jug-tabletX2.png
+                "
+              />
+              <img
+                src="./images/desktop/hero-milk-jug-desktop.png"
+                alt="milk-jug"
+              />
+            </picture>
+          </div>
+          <div>
+            <p>
+              indulge in a scoop of ice <br />
+              cream made with passion and <br />
+              treat your taste buds to an <br />
+              unforgettable experience!
+            </p>
+            <button type="button" class="arrow-btn">
+              <a class="icon" aria-label="arrow-button"></a>
+              <svg>
+                <use href="images/symbol-defs.svg#icon-arrow-right"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="hero-icecream">
           <picture>
             <!-- versiune desktop -->
-            <source media="(min-width: 769px)"
-              srcset="./images/desktop/hero-milk-jug-desktop.png, ./images/desktop-retina/hero-milk-jug-desktopx2.png" />
+            <source
+              media="(min-width: 769px), (min-width: 1280px)"
+              srcset="
+                ./images/desktop/hero-icecream-desktop.png,
+                ./images/desktop-retina/hero-icecream-desktopx2.png
+              "
+            />
             <!-- versiune tableta -->
-            <source media="(max-width: 768px)"
-              srcset="./images/tablet/hero-milk-jug-tablet.png, ./images/tablet-retina/hero-milk-jug-tabletX2.png" />
-            <img src="./images/desktop/hero-milk-jug-desktop.png" alt="milk-jug">
+            <source
+              media="(max-width: 768px)"
+              srcset="
+                ./images/tablet/hero-icecream-tablet.png,
+                ./images/tablet-retina/hero-icecream-tabletX2.png
+              "
+            />
+            <source
+              media="(min-width: 320px)"
+              srcset="
+                ./images/mobile/hero-ice-cream-mobile.png,
+                ./images/mobile-retina/hero-ice-cream-mobileX2.png
+              "
+            />
+            <img
+              src="./images/desktop/hero-icecream-desktop.png"
+              alt="icecream"
+            />
           </picture>
         </div>
-        <div>
-          <p>
-            indulge in a scoop of ice <br />
-            cream made with passion and <br />
-            treat your taste buds to an <br />
-            unforgettable experience!
-          </p>
-          <button type="button" class="arrow-btn">
-            <a class="icon" aria-label="arrow-button"></a>
-            <svg>
-              <use href="images/symbol-defs.svg#icon-arrow-right"></use>
-            </svg>
-          </button>
+        <div class="cafes-trucks">
+          <ul>
+            <li class="cafes">
+              <span class="circle"></span>
+              <span class="cafes-number">16</span>
+              <span class="cafes-cafes">cafes</span>
+            </li>
+            <li class="food-trucks">
+              <span class="circle2"></span>
+              <span class="trucks-number">23</span>
+              <span class="trucks-trucks">food trucks</span>
+            </li>
+          </ul>
         </div>
-      </div>
-    </div>
-    <div class="hero-right">
-      <div class="hero-icecream">
-        <picture>
-          <!-- versiune desktop -->
-          <source media="(min-width: 769px), (min-width: 1280px)"
-            srcset="./images/desktop/hero-icecream-desktop.png, ./images/desktop-retina/hero-icecream-desktopx2.png" />
-          <!-- versiune tableta -->
-          <source media="(max-width: 768px)"
-            srcset="./images/tablet/hero-icecream-tablet.png, ./images/tablet-retina/hero-icecream-tabletX2.png" />
-          <source media="(min-width: 320px)"
-            srcset="./images/mobile/hero-ice-cream-mobile.png, ./images/mobile-retina/hero-ice-cream-mobileX2.png" />
-          <img src="./images/desktop/hero-icecream-desktop.png" alt="icecream">
-        </picture>
-      </div>
-      <div class="cafes-trucks">
-        <ul>
-          <li class="cafes">
-            <span class="circle"></span>
-            <span class="cafes-number">16</span>
-            <span class="cafes-cafes">cafes</span>
-          </li>
-          <li class="food-trucks">
-            <span class="circle2"></span>
-            <span class="trucks-number">23</span>
-            <span class="trucks-trucks">food trucks</span>
-          </li>
-        </ul>
-      </div>
-      <div class="tasty">
-        <picture>
-          <!-- versiune desktop -->
-          <source media="(min-width: 768px)"
-            srcset="./images/desktop/hero-soooooo-desktop.png, ./images/desktop-retina/hero-soooooo-tasty-desktopx2.png" />
-          <!-- versiune tableta -->
-          <source media="(max-width: 768px)"
-            srcset="./images/tablet/hero-soooooo-tasty-tablet.png, ./images/tablet-retina/hero-soooooo-tasty-tabletX2.png" />
-          <img src="./images/desktop/hero-soooooo-desktop.png" alt="girl-eating-icecream">
-        </picture>
+        <div class="tasty">
+          <picture>
+            <!-- versiune desktop -->
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/desktop/hero-soooooo-desktop.png,
+                ./images/desktop-retina/hero-soooooo-tasty-desktopx2.png
+              "
+            />
+            <!-- versiune tableta -->
+            <source
+              media="(max-width: 768px)"
+              srcset="
+                ./images/tablet/hero-soooooo-tasty-tablet.png,
+                ./images/tablet-retina/hero-soooooo-tasty-tabletX2.png
+              "
+            />
+            <img
+              src="./images/desktop/hero-soooooo-desktop.png"
+              alt="girl-eating-icecream"
+            />
+          </picture>
+        </div>
       </div>
     </div>
   </div>
