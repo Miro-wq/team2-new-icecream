@@ -202,11 +202,12 @@
   }
 
   .section-products {
-    display: flex;
-    justify-content: space-between;
     margin-right: 10px;
     margin-left: -20px;
     margin-top: 5%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1px;
   }
 }
 
