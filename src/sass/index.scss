@@ -138,6 +138,7 @@
   .global-header {
     height: 502px;
     padding-top: 8px;
+
   }
 
   .burger-menu {
@@ -161,6 +162,41 @@
     height: 410px;
     right: 94px;
     top: 9px;
+  }
+
+  .passion {
+    font-size: 48px;
+  }
+
+  .ice-cream-with {
+    font-size: 26px;
+    margin: 5;
+  }
+
+  .hero-products-btn {
+    width: 62px;
+    height: 24px;
+    font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 8px;
+      text-align: center;
+      color: #fff;
+  }
+
+  .hero-howitsmade-btn {
+    width: 82px;
+    height: 24px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 8px;
+    text-align: center;
+    color: #d41443;    
+  }
+
+  .hero-left {
+    position: absolute;
+    bottom: 140px;
+    gap: -30px;
   }
 }
 
