@@ -5,80 +5,6 @@
 @import url(/src/sass/reviews.scss);
 @import url(/src/sass/section2.scss);
 
-@media screen and (max-width: 320px) {
-  // footer========================================
-  .footer-copyright {
-    margin: 0 auto;
-    width: 48%;
-  }
-  .feel-free,
-  .phone {
-    font-size: 12px;
-  }
-  .social-link {
-    margin: 0;
-    align-items: flex-end !important;
-  }
-  .high-text {
-    max-width: 100%;
-    margin: 0;
-  }
-  .footer-text-and-social-section {
-    justify-content: flex-end !important;
-  }
-  .footer-buttons {
-    margin-bottom: 0;
-  }
-  .footer-passion {
-    font-size: 34px;
-    margin-bottom: 40px;
-  }
-  .footer-homemade {
-    font-size: 18px;
-  }
-  .footer-contact-card {
-    margin: auto 20px;
-  }
-  // footer end==================================
-  .header nav {
-    display: none;
-  }
-  .buy-now-btn {
-    display: none;
-  }
-
-  .hero-jug {
-    display: none;
-  }
-
-  .tasty {
-    display: none;
-  }
-
-  .cafes-trucks {
-    display: none;
-  }
-
-  .hero-icecream img {
-    position: absolute;
-    height: 410px;
-    right: 94px;
-    top: 9px;
-  }
-
-  .hero-icecream {
-    position: absolute;
-    background: var(--pale-red) center;
-    width: 346px;
-    height: 344px;
-    border-radius: 50%;
-    z-index: 2;
-    top: 83px;
-    left: 36px;
-    /* padding-top: 34px; */
-  }
-}
-
 @media screen and (max-width: 480px) {
   // footer=========================================
   .footer-copyright {
@@ -164,6 +90,86 @@
   }
 }
 
+@media screen and (max-width: 320px) {
+  // footer========================================
+  .footer-copyright {
+    margin: 0 auto;
+    width: 48%;
+  }
+  .feel-free,
+  .phone {
+    font-size: 12px;
+  }
+  .social-link {
+    margin: 0;
+    align-items: flex-end !important;
+  }
+  .high-text {
+    max-width: 100%;
+    margin: 0;
+  }
+  .footer-text-and-social-section {
+    justify-content: flex-end !important;
+  }
+  .footer-buttons {
+    margin-bottom: 0;
+  }
+  .footer-passion {
+    font-size: 34px;
+    margin-bottom: 40px;
+  }
+  .footer-homemade {
+    font-size: 18px;
+  }
+  .footer-contact-card {
+    margin: auto 20px;
+  }
+  // footer end==================================
+  .right-p-cow {
+    background-image: url(/src/images/mobile/howitsmade-milk-splash-mobile.png);
+    background-repeat: no-repeat;
+    background-position: 0 40%;
+    background-size: 100% 34%;
+  }
+  .header nav {
+    display: none;
+  }
+  .buy-now-btn {
+    display: none;
+  }
+
+  .hero-jug {
+    display: none;
+  }
+
+  .tasty {
+    display: none;
+  }
+
+  .cafes-trucks {
+    display: none;
+  }
+
+  .hero-icecream img {
+    position: absolute;
+    height: 410px;
+    right: 94px;
+    top: 9px;
+  }
+
+  .hero-icecream {
+    position: absolute;
+    background: var(--pale-red) center;
+    width: 346px;
+    height: 344px;
+    border-radius: 50%;
+    z-index: 2;
+    top: 83px;
+    left: 36px;
+    /* padding-top: 34px; */
+  }
+}
+
 @media screen and (min-width: 481px) and (max-width: 768px) {
   // footer========================================================
   .footer-contact {
@@ -207,6 +213,10 @@
     padding: 55px 13px;
   }
   // footer end=======================================================
+  .howitsmade-background {
+    background-image: none;
+  }
+
   .first-box-sec2,
   .second-box-sec2,
   .third-box-sec2 {

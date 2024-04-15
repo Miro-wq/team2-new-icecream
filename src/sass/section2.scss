@@ -14,6 +14,7 @@
   text-align: center;
 }
 .howitsmade-background {
+  max-width: 1200px;
   background-image: url('../images/howitsmade-milk-splash.png');
   color: var(--strong-red);
   width: 100%;
@@ -21,7 +22,6 @@
   background-size: 100% 100%;
   display: flex;
   align-items: center;
-  // justify-content: space-around;
   position: relative;
   margin: 0 auto;
   flex-wrap: wrap;
@@ -112,7 +112,9 @@
 .third-box-sec2 {
   max-width: 20em;
 }
+
 .icon-list-section2 {
+  max-width: 1200px;
   margin: 0 auto;
   display: flex;
   width: 90%;
@@ -171,7 +173,7 @@
   align-items: center;
   width: 67em;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 // mods==============================================
 .modal-overlay {
