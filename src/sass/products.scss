@@ -184,3 +184,55 @@
   fill: #ffffff;
   background: var(--strong-red);
 }
+
+@media screen and (min-width: 768px) {
+  .ice-cream {
+    width: 224px;
+    height: 473px;
+  }
+
+  .coffee {
+    width: 224px;
+    height: 473px;
+  }
+
+  .milkshake {
+    width: 224px;
+    height: 473px;
+  }
+
+  .section-products {
+    margin-right: 10px;
+    margin-left: -20px;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+
+.ice-cream{
+  width: 368px;
+  height: 535px;
+}
+
+.coffee{
+  width: 368px;
+  height: 535px;
+}
+
+.milkshake{
+  width: 368px;
+  height: 535px;
+}
+
+.section-products{
+  display: flex;
+  justify-content: space-between;
+  margin-right: 16px;
+  margin-left: -16px;
+}
+
+}
