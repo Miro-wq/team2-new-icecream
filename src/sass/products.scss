@@ -104,9 +104,18 @@
   width: 40px;
   height: 40px;
   padding: 10px;
-  fill: var(--strong-red);
+  color: var(--strong-red);
   background-color: white;
   border-radius: 50%;
+  border: none;
+}
+
+.wow {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border: none;
 }
 
 .coffee {
@@ -181,8 +190,31 @@
 
 .arrow:hover,
 .arrow:focus {
-  fill: #ffffff;
+  color: #ffffff;
   background: var(--strong-red);
+  outline: none;
+}
+
+// .modal-content {
+//   width: 400px;
+//   height: 400px;
+//   background-color: black;
+// }
+
+.is-hidden {
+  visibility: hidden;
+}
+
+.modal {
+  width: 400px;
+  height: 400px;
+}
+
+@media screen and (max-width: 320px) {
+  .section-products {
+    padding-left: 12px;
+    gap: 60px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -208,31 +240,148 @@
     display: flex;
     justify-content: space-evenly;
     gap: 1px;
+    padding-left: 12px;
   }
 }
 
 @media screen and (min-width: 1200px) {
+  .ice-cream {
+    width: 368px;
+    height: 535px;
+  }
 
-.ice-cream{
-  width: 368px;
-  height: 535px;
+  .coffee {
+    width: 368px;
+    height: 535px;
+  }
+
+  .milkshake {
+    width: 368px;
+    height: 535px;
+  }
+
+  .section-products {
+    display: flex;
+    justify-content: center;
+    margin-right: 16px;
+    margin-left: -16px;
+    gap: 32px;
+  }
 }
 
-.coffee{
-  width: 368px;
-  height: 535px;
+li {
+  list-style: none;
 }
 
-.milkshake{
-  width: 368px;
-  height: 535px;
+.popup {
+  display: none;
+  position: fixed;
+  top: 10%;
+  left: 35%;
 }
 
-.section-products{
+.open-popup {
+  display: block;
+}
+
+.container-ice {
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(110, 110, 110, 0.7);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+}
+
+.modal-title {
   display: flex;
-  justify-content: space-between;
-  margin-right: 16px;
-  margin-left: -16px;
+  flex-direction: column;
+  align-items: center;
 }
 
+.ice-cream-story {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+.ice-cream-story p {
+  margin-top: 0px;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: rgba(212, 20, 67, 0.4);
+  border-radius: 15px;
+  text-align: center;
+  padding: 0 10px;
+  margin-bottom: -10px;
+}
+
+.modal-title h2 {
+  margin-bottom: 0px;
+  font-size: 28px;
+  font-weight: 700;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: rgba(212, 20, 67, 0.4);
+  border-radius: 15px;
+  padding: 0 10px;
+}
+
+.hiddenbutton {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.ic-btn {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 2%;
+  right: 2%;
+}
+
+.story-ice {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 10px;
+  border-radius: 15px;
+}
+
+.story-ice p {
+  color: white;
+  padding: 0 10px;
+  text-align: center;
+  border-radius: 15px;
+  font-weight: 700;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: rgba(212, 20, 67, 0.4);
+}
+
+.story-ice ul {
+  color: white;
+  padding: 0 10px;
+  text-align: center;
+  border-radius: 15px;
+  font-weight: 700;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: rgba(212, 20, 67, 0.4);
+}
+.modal-content-for-ice {
+  width: 89%;
+  height: 50vh;
+  background-color: rgb(47, 34, 34);
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  overflow-y: auto;
 }

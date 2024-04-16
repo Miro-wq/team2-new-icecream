@@ -1,61 +1,125 @@
 <section class="page">
-    <div class="title" id="products">
-        <h3>100% NATURAL</h3>
-        <h2>PRODUCTS</h2>
-    </div>
-    <div class="products">
-        <ul class="section-products">
-            <li class="ice-cream">
-                <img src="./images/products-ice-cream.png" class="ice" alt="A pic of an ice cream">
-                <h3>ICE CREAM</h3>
-                <svg class="dots">
-                    <use href="images/symbol-defs.svg#icon-group"></use>
-                </svg>
-                <p>Indulge in our rich and creamy ice cream, handcrafted with all-natural ingredients
-                    and
-                    available
-                    in a
-                    variety of
-                    flavors.</p>
-                <a href=""><svg class="arrow">
-                        <use href="./images/symbol-defs.svg#icon-arrow-right">
-                        </use>
-                    </svg>
-                </a>
-            </li>
+  <div class="title" id="products">
+    <h3>100% NATURAL</h3>
+    <h2>PRODUCTS</h2>
+  </div>
+  <div class="products">
+    <ul class="section-products">
+      <li class="ice-cream">
+        <img
+          src="./images/products-ice-cream.png"
+          class="ice"
+          alt="A pic of an ice cream"
+        />
+        <h3>ICE CREAM</h3>
+        <svg class="dots">
+          <use href="images/symbol-defs.svg#icon-group"></use>
+        </svg>
+        <p>
+          Indulge in our rich and creamy ice cream, handcrafted with all-natural
+          ingredients and available in a variety of flavors.
+        </p>
+        <button type="submit" onclick="openPopup()" class="open-popup arrow">
+          &#10140;
+        </button>
+      </li>
 
-            <li class="coffee">
-                <img src="./images/products-ice-coffee.png" class="brew" alt="A pic of an iced coffee glass">
-                <h3>ICE COFFEE</h3>
-                <svg class="dots">
-                    <use href="images/symbol-defs.svg#icon-group"></use>
-                </svg>
-                <p>Refresh and energize with our perfectly brewed iced coffee, made with high-quality beans and
-                    served
-                    over ice.</p>
-                <a href=""><svg class="arrow">
-                        <use href="./images/symbol-defs.svg#icon-arrow-right">
-                        </use>
-                    </svg>
-                </a>
-            </li>
-            <li class="milkshake">
-                <img src="./images/products-milkshakes.png" class="shake" alt="A pic of a milkshake glass">
-                <h3>MILKSHAKE</h3>
-                <svg class="dots">
-                    <use href="images/symbol-defs.svg#icon-group"></use>
-                </svg>
-                <p>Satisfy your sweet tooth with our thick, made with premium ice cream, topped with whipped
-                    cream
-                    and
-                    your favorite
-                    toppings.</p>
-                <a href=""><svg class="arrow">
-                        <use href="./images/symbol-defs.svg#icon-arrow-right">
-                        </use>
-                    </svg>
-                </a>
-            </li>
+      <li class="coffee">
+        <img
+          src="./images/products-ice-coffee.png"
+          class="brew"
+          alt="A pic of an iced coffee glass"
+        />
+        <h3>ICE COFFEE</h3>
+        <svg class="dots">
+          <use href="images/symbol-defs.svg#icon-group"></use>
+        </svg>
+        <p>
+          Refresh and energize with our perfectly brewed iced coffee, made with
+          high-quality beans and served over ice.
+        </p>
+        <button type="submit" onclick="openPopup()" class="open-popup arrow">
+          &#10140;
+        </button>
+      </li>
+      <li class="milkshake">
+        <img
+          src="./images/products-milkshakes.png"
+          class="shake"
+          alt="A pic of a milkshake glass"
+        />
+        <h3>MILKSHAKE</h3>
+        <svg class="dots">
+          <use href="images/symbol-defs.svg#icon-group"></use>
+        </svg>
+        <p>
+          Satisfy your sweet tooth with our thick, made with premium ice cream,
+          topped with whipped cream and your favorite toppings.
+        </p>
+        <button type="submit" onclick="openPopup()" class="open-popup arrow">
+          &#10140;
+        </button>
+      </li>
+    </ul>
+  </div>
+  <div class="container-ice popup" id="popup">
+    <div class="modal-content-for-ice">
+      <div class="modal-title">
+        <h2>The Enchanted Ice Cream</h2>
+      </div>
+      <div class="ice-cream-story">
+        <p>Curious to see how it's made? <br />Let's find out!</p>
+      </div>
+      <div class="story-ice">
+        <p>
+          In a magical kingdom, guarded by the Ice Cream Fairy, lies a secret
+          recipe for the most enchanting ice cream.
+        </p>
+
+        <ul>
+          <li>Fresh moonlit berries</li>
+          <li>Whispered vanilla extract</li>
+          <li>Stardust sugar crystals</li>
+          <li>Creamy milk from dreamy meadows</li>
+          <li>A pinch of fairy dust (optional)</li>
         </ul>
+        <p>Instructions:</p>
+        <ul>
+          <li>
+            Moonlit Berries: Gently crush fresh berries, each holding a drop of
+            moonlight.
+          </li>
+          <li>
+            Whispers of Vanilla: Combine berries with vanilla, listening to the
+            Vanilla Spirits' whispers.
+          </li>
+          <li>
+            Stardust Sugar: Add magical sugar crystals, sparkling like shooting
+            stars.
+          </li>
+          <li>
+            Dreamy Milk: Pour in creamy milk, imagining it as a dreamy river.
+          </li>
+          <li>Fairy Dust Sparkle: Sprinkle with fairy dust for extra magic.</li>
+          <li>
+            Chill and Dream: Churn in an ice cream maker and dream of delightful
+            flavors.
+          </li>
+          <li>Serve with Wonder: Scoop into bowls and sprinkle with joy.</li>
+        </ul>
+        <p>
+          Enjoy this enchanting ice cream, and may it bring magic to your day!
+        </p>
+      </div>
+      <button
+        type="button"
+        class="hiddenbutton closePopup"
+        onclick="closePopup()"
+      >
+        <svg class="ic-btn">
+          <!-- <use href="./images/modal-devs.svg#icon-icecream"></use> -->
+        </svg>
+      </button>
     </div>
+  </div>
 </section>
