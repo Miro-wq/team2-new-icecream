@@ -212,7 +212,7 @@
 
 @media screen and (max-width: 320px) {
   .section-products {
-    padding-left: 12px;
+    padding-left: 0px;
     gap: 60px;
   }
 }
@@ -240,11 +240,11 @@
     display: flex;
     justify-content: space-evenly;
     gap: 1px;
-    padding-left: 12px;
+    padding-left: 28px;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .ice-cream {
     width: 368px;
     height: 535px;
@@ -264,7 +264,7 @@
     display: flex;
     justify-content: center;
     margin-right: 16px;
-    margin-left: -16px;
+    margin-left: 16px;
     gap: 32px;
   }
 }

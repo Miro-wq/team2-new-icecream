@@ -131,6 +131,35 @@
     background-position: 0 40%;
     background-size: 100% 34%;
   }
+
+  .one-sec2 {
+    font-size: 12px;
+    line-height: 162%;
+  }
+
+  .two-sec2 {
+    font-size: 12px;
+    line-height: 162%;
+  }
+
+  .icon-list-section2 p {
+    font-size: 12px;
+    line-height: 170%;
+  }
+
+  .subtitle {
+    font-size: 18px;
+  }
+
+  .howitsmade-title {
+    font-size: 34px;
+    line-height: 110%;
+  }
+
+  .masonry {
+    gap: 3px;
+  }
+
   .header nav {
     display: none;
   }
@@ -167,6 +196,30 @@
     top: 83px;
     left: 36px;
     /* padding-top: 34px; */
+  }
+
+  .ice-cream-with {
+    font-size: 26px;
+  }
+
+  .passion {
+    font-size: 48px;
+  }
+
+  .hero-left {
+    bottom: 136px;
+  }
+  
+  .hero-products-btn {
+    width: 62px;
+    height: 24px;
+    font-size: 8px;
+  }
+
+  .hero-howitsmade-btn {
+    width: 82px;
+    height: 24px;
+    font-size: 8px;
   }
 }
 
@@ -331,6 +384,14 @@
     display: none;
   }
   // mobile end========================================
+
+  .header ul {
+    gap: 0.8em;
+  }
+
+  .header li {
+    font-size: 13px;
+  }
 }
 
 @media screen and (min-width: 1281px) {
