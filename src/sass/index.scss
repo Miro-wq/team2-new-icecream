@@ -209,7 +209,7 @@
   .hero-left {
     bottom: 136px;
   }
-  
+
   .hero-products-btn {
     width: 62px;
     height: 24px;
@@ -376,7 +376,21 @@
   }
   // mobile end=======================================
 }
-@media screen and (min-width: 769px) and (max-width: 1280px) {
+@media screen and (min-width: 769px) and (max-width: 900px) {
+  .menu-container {
+    width: 254px;
+    height: 1020px;
+  }
+  .container-for-mobile {
+    position: absolute;
+    right: 200px;
+    top: 42px;
+  }
+  .header nav {
+    display: none;
+  }
+}
+@media screen and (min-width: 900px) and (max-width: 1000px) {
   // mobile
   .menu-container,
   .container-for-mobile,
@@ -386,11 +400,19 @@
   // mobile end========================================
 
   .header ul {
-    gap: 0.8em;
+    gap: 17px;
   }
 
-  .header li {
-    font-size: 13px;
+  // .header li {
+  //   font-size: 13px;
+  // }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1280px) {
+  .menu-container,
+  .container-for-mobile,
+  .menu-container.is-open {
+    display: none;
   }
 }
 
