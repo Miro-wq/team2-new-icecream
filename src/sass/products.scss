@@ -193,13 +193,8 @@
   color: #ffffff;
   background: var(--strong-red);
   outline: none;
+  transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
-
-// .modal-content {
-//   width: 400px;
-//   height: 400px;
-//   background-color: black;
-// }
 
 .is-hidden {
   visibility: hidden;
@@ -208,65 +203,6 @@
 .modal {
   width: 400px;
   height: 400px;
-}
-
-@media screen and (max-width: 320px) {
-  .section-products {
-    padding-left: 0px;
-    gap: 60px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .ice-cream {
-    width: 224px;
-    height: 473px;
-  }
-
-  .coffee {
-    width: 224px;
-    height: 473px;
-  }
-
-  .milkshake {
-    width: 224px;
-    height: 473px;
-  }
-
-  .section-products {
-    margin-right: 10px;
-    margin-left: -20px;
-    margin-top: 5%;
-    display: flex;
-    justify-content: space-evenly;
-    gap: 1px;
-    padding-left: 28px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .ice-cream {
-    width: 368px;
-    height: 535px;
-  }
-
-  .coffee {
-    width: 368px;
-    height: 535px;
-  }
-
-  .milkshake {
-    width: 368px;
-    height: 535px;
-  }
-
-  .section-products {
-    display: flex;
-    justify-content: center;
-    margin-right: 16px;
-    margin-left: 16px;
-    gap: 32px;
-  }
 }
 
 li {
@@ -297,9 +233,15 @@ li {
 }
 
 .modal-title {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: none;
+}
+
+.modal-title-coffee {
+  display: none;
+}
+
+.modal-title-milkshake {
+  display: none;
 }
 
 .ice-cream-story {
@@ -376,12 +318,466 @@ li {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   background-color: rgba(212, 20, 67, 0.4);
 }
+
 .modal-content-for-ice {
-  width: 89%;
-  height: 50vh;
+  width: 95%;
+  height: 90%;
   background-color: rgb(47, 34, 34);
   position: absolute;
   left: 50%;
-  transform: translate(-50%, 50%);
+  transform: translate(-50%, 5%);
   overflow-y: auto;
+  background-image: url(../images/icecream.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
 }
+
+// COFFEE MODAL //
+
+.coffee-pop {
+  display: none;
+  position: fixed;
+  top: 10%;
+  left: 35%;
+}
+
+.container-coffee {
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(110, 110, 110, 0.7);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+}
+
+.modal-content-for-coffee {
+  width: 95%;
+  height: 90%;
+  background-color: rgb(47, 34, 34);
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 5%);
+  overflow-y: auto;
+  background-image: url(../images/coffee-beans.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+}
+
+.modal-title-coffee {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.coffee-story {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+.coffee-story p {
+  margin-top: 0px;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: rgba(94, 54, 28, 0.6);
+  border-radius: 15px;
+  text-align: center;
+  padding: 0 10px;
+  margin-bottom: -10px;
+}
+
+.modal-title-coffee h2 {
+  margin-bottom: 0px;
+  font-size: 28px;
+  font-weight: 700;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: rgba(94, 54, 28, 0.6);
+  border-radius: 15px;
+  padding: 0 10px;
+}
+
+.hiddenbutton {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.bean-btn {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 2%;
+  right: 2%;
+}
+
+.story-bean {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 10px;
+  border-radius: 15px;
+}
+
+.story-bean p {
+  color: white;
+  padding: 0 10px;
+  text-align: center;
+  border-radius: 15px;
+  font-weight: 700;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: rgba(94, 54, 28, 0.6);
+}
+
+.story-bean ul {
+  color: white;
+  padding: 0 10px;
+  text-align: center;
+  border-radius: 15px;
+  font-weight: 700;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: rgba(94, 54, 28, 0.6);
+}
+
+// MILKSHAKE MODAL //
+
+.milk-pop {
+  display: none;
+  position: fixed;
+  top: 10%;
+  left: 35%;
+}
+
+.container-shake {
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(110, 110, 110, 0.7);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+}
+
+.modal-content-for-shake {
+  width: 95%;
+  height: 90%;
+  background-color: rgb(47, 34, 34);
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 5%);
+  overflow-y: auto;
+  background-image: url(../images/green.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+}
+
+.modal-title-milkshake {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.milkshake-story {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+.milkshake-story p {
+  margin-top: 0px;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: rgba(56, 73, 34, 0.4);
+  border-radius: 15px;
+  text-align: center;
+  padding: 0 10px;
+  margin-bottom: -10px;
+}
+
+.modal-title-milkshake h2 {
+  margin-bottom: 0px;
+  font-size: 28px;
+  font-weight: 700;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: rgba(56, 73, 34, 0.4);
+  border-radius: 15px;
+  padding: 0 10px;
+}
+
+.hiddenbutton {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.shake-btn {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 2%;
+  right: 2%;
+}
+
+.story-shake {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 10px;
+  border-radius: 15px;
+}
+
+.story-shake p {
+  color: white;
+  padding: 0 10px;
+  text-align: center;
+  border-radius: 15px;
+  font-weight: 700;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: rgba(56, 73, 34, 0.4);
+}
+
+.story-shake ul {
+  color: white;
+  padding: 0 10px;
+  text-align: center;
+  border-radius: 15px;
+  font-weight: 700;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: rgba(56, 73, 34, 0.4);
+}
+
+// MEDIA SCREEEEEEEEEEEEEEEEEEEEEEEEEEEEEEENS //
+
+@media screen and (max-width: 320px) {
+  .section-products {
+    padding-left: 0px;
+    gap: 60px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .modal-content-for-ice {
+    width: 95%;
+    height: 90%;
+    background-color: rgb(47, 34, 34);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 5%);
+    overflow-y: auto;
+    background-image: url(../images/icecream.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+  }
+
+  .modal-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .modal-content-for-coffee {
+    width: 95%;
+    height: 90%;
+    background-color: rgb(47, 34, 34);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 5%);
+    overflow-y: auto;
+    background-image: url(../images/coffee-beans.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+  }
+
+  .modal-title-coffee {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .modal-content-for-shake {
+    width: 95%;
+    height: 90%;
+    background-color: rgb(47, 34, 34);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 5%);
+    overflow-y: auto;
+    background-image: url(../images/green.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+  }
+
+  .modal-title-milkshake {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .ice-cream {
+    width: 224px;
+    height: 473px;
+  }
+
+  .coffee {
+    width: 224px;
+    height: 473px;
+  }
+
+  .milkshake {
+    width: 224px;
+    height: 473px;
+  }
+
+  .section-products {
+    margin-right: 10px;
+    margin-left: -20px;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1px;
+    padding-left: 28px;
+  }
+
+  .modal-content-for-ice {
+    width: 60%;
+    height: 90%;
+    background-color: rgb(47, 34, 34);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 5%);
+    overflow-y: auto;
+    background-image: url(../images/icecream.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+  }
+
+  .modal-content-for-coffee {
+    width: 60%;
+    height: 90%;
+    background-color: rgb(47, 34, 34);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 5%);
+    overflow-y: auto;
+    background-image: url(../images/coffee-beans.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+  }
+
+  .modal-content-for-shake {
+    width: 60%;
+    height: 90%;
+    background-color: rgb(47, 34, 34);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 5%);
+    overflow-y: auto;
+    background-image: url(../images/green.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .ice-cream {
+    width: 368px;
+    height: 535px;
+  }
+
+  .coffee {
+    width: 368px;
+    height: 535px;
+  }
+
+  .milkshake {
+    width: 368px;
+    height: 535px;
+  }
+
+  .section-products {
+    display: flex;
+    justify-content: center;
+    margin-right: 16px;
+    margin-left: 16px;
+    gap: 32px;
+  }
+
+  .modal-content-for-ice {
+    width: 40%;
+    height: 80%;
+    background-color: rgb(47, 34, 34);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 10%);
+    overflow-y: auto;
+    background-image: url(../images/icecream.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+  }
+
+  .modal-content-for-coffee {
+    width: 40%;
+    height: 80%;
+    background-color: rgb(47, 34, 34);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 10%);
+    overflow-y: auto;
+    background-image: url(../images/coffee-beans.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+  }
+
+  .modal-content-for-shake {
+    width: 40%;
+    height: 80%;
+    background-color: rgb(47, 34, 34);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 10%);
+    overflow-y: auto;
+    background-image: url(../images/green.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+  }
+}
+// mods
+// .fade-in {
+//   opacity: 1;
+//   transition: opacity 1s ease-in-out;
+// }
+
+// .fade-out {
+//   opacity: 0;
+//   transition: opacity 1s ease-in-out;
+// }

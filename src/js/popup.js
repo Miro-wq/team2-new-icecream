@@ -1,4 +1,4 @@
-let popup = document.getElementById('popup');
+var popup = document.getElementById('popup');
 
 function openPopup() {
   popup.classList.add('open-popup');
@@ -7,3 +7,9 @@ function openPopup() {
 function closePopup() {
   popup.classList.remove('open-popup');
 }
+
+document.addEventListener('click', function (event) {
+  if (event.target === popup) {
+    closePopup();
+  }
+});

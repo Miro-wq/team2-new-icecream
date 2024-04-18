@@ -38,7 +38,7 @@
           Refresh and energize with our perfectly brewed iced coffee, made with
           high-quality beans and served over ice.
         </p>
-        <button type="submit" onclick="openPopup()" class="open-popup arrow">
+        <button type="submit" onclick="openModal()" class="arrow">
           &#10140;
         </button>
       </li>
@@ -56,7 +56,7 @@
           Satisfy your sweet tooth with our thick, made with premium ice cream,
           topped with whipped cream and your favorite toppings.
         </p>
-        <button type="submit" onclick="openPopup()" class="open-popup arrow">
+        <button type="submit" onclick="openShake()" class="arrow">
           &#10140;
         </button>
       </li>
@@ -117,7 +117,115 @@
         onclick="closePopup()"
       >
         <svg class="ic-btn">
-          <!-- <use href="./images/modal-devs.svg#icon-icecream"></use> -->
+          <use href="/src/images/products-defs.svg#icon-icecream"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <div class="container-coffee coffee-pop" id="coffee-pop">
+    <div class="modal-content-for-coffee">
+      <div class="modal-title-coffee">
+        <h2>The Magical Morning Brew</h2>
+      </div>
+      <div class="coffee-story">
+        <p>Curious to see how it's made? <br />Let's find out!</p>
+      </div>
+      <div class="story-bean">
+        <p>
+          In a cozy cottage, nestled among whispering trees, lived the Coffee
+          Witch, Arabella. She brewed the magical "Morning Dew Brew," a coffee
+          that could awaken even the sleepiest souls.
+        </p>
+
+        <ul>
+          <li>Freshly roasted coffee beans, kissed by morning sun</li>
+          <li>Enchanted water from the Fairy Springs</li>
+          <li>Ancient cinnamon from the Spice Forest</li>
+          <li>Creamy milk from the Misty Meadows</li>
+        </ul>
+        <p>Instructions:</p>
+        <ul>
+          <li>
+            Sun-Kissed Beans: Grind the beans, releasing their rich aroma..
+          </li>
+          <li>
+            Enchanted Water: Pour Fairy Springs water, infusing its magic.
+          </li>
+          <li>Cinnamon Whispers: Add ancient cinnamon for warmth.</li>
+          <li>Creamy Misty Meadows: Froth the milk, imagining misty clouds.</li>
+          <li>
+            Brewing Magic: Brew the coffee, transforming it into a shimmering
+            potion.
+          </li>
+          <li>Serve with Love: Pour into cups, sharing warmth and joy.</li>
+        </ul>
+        <p>
+          And so, every morning, Arabella brewed her magical "Morning Dew Brew,"
+          bringing warmth, joy, and a touch of magic to each enchanted day.
+        </p>
+      </div>
+      <button type="button" class="hiddenbutton" onclick="closeModal()">
+        <svg class="bean-btn">
+          <use href="/src/images/products-defs.svg#icon-coffee-bean"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <div class="container-shake milk-pop" id="milk-pop">
+    <div class="modal-content-for-shake">
+      <div class="modal-title-milkshake">
+        <h2>The Whimsical Milkshake</h2>
+      </div>
+      <div class="milkshake-story">
+        <p>Curious to see how it's made? <br />Let's find out!</p>
+      </div>
+      <div class="story-shake">
+        <p>
+          In a vibrant village where laughter echoed through the streets, lived
+          a cheerful Milkshake Magician named Lila. She crafted the "Whimsical
+          Milkshake," a drink that could turn any frown upside down.
+        </p>
+
+        <ul>
+          <li>Fresh strawberries, picked from the sunny fields</li>
+          <li>Creamy vanilla ice cream from the Frosty Peaks</li>
+          <li>A splash of enchanted milk from the Happy Cows</li>
+          <li>A sprinkle of magical rainbow sprinkles</li>
+        </ul>
+        <p>Instructions:</p>
+        <ul>
+          <li>
+            Strawberry Fields: Blend fresh strawberries, capturing their sunny
+            sweetness.
+          </li>
+          <li>
+            Frosty Peaks Ice Cream: Add creamy vanilla ice cream, smooth as
+            fresh snow.
+          </li>
+          <li>Happy Cows Milk: Pour enchanted milk, rich and frothy.</li>
+          <li>
+            Rainbow Sprinkles: Sprinkle magical rainbow sprinkles for a touch of
+            joy.
+          </li>
+          <li>
+            Blend with Laughter: Blend the ingredients, creating a swirl of
+            happiness.
+          </li>
+          <li>
+            Serve with a Smile: Pour into glasses, garnished with extra
+            sprinkles and a cherry on top.
+          </li>
+        </ul>
+        <p>
+          And so, every day, Lila crafted her "Whimsical Milkshake," spreading
+          joy and delight to all who sipped its magical sweetness.
+        </p>
+      </div>
+      <button type="button" class="hiddenbutton" onclick="closeShake()">
+        <svg class="shake-btn">
+          <use href="/src/images/products-defs.svg#icon-milkshake"></use>
         </svg>
       </button>
     </div>
