@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ice Cream Shop - Order Now</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+
+      .background {
+        background-image: url('./images/oig3.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100vh;
+        /* Adjust height as needed */
+        overflow: hidden;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        position: relative;
+        top: 40px;
+      }
+
+      h1 {
+        text-align: center;
+        color: #333;
+      }
+
+      form {
+        margin-top: 20px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+
+      input[type='text'],
+      input[type='number'],
+      select {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+
+      input[type='submit'] {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #4caf50;
+        color: #fff;
+        cursor: pointer;
+      }
+
+      .logo svg {
+        width: 199px;
+        height: 50px;
+        z-index: 5;
+        margin-left: 0;
+        position: relative;
+        top: 40px;
+        left: 16px;
+      }
+    </style>
+  </head>
+
+  <body class="background">
+    <div class="header">
+      <div>
+        <a href="index.html" class="logo">
+          <svg>
+            <use href="images/symbol-defs.svg#icon-header"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div>
+      <div class="container">
+        <h1>Order Ice Cream Now</h1>
+        <form id="orderForm" action="#" method="post">
+          <div id="products">
+            <div class="product">
+              <label for="flavor1">Select Flavor:</label>
+              <select
+                name="flavor[]"
+                class="flavor"
+                onchange="calculateTotal()"
+              >
+                <option value="vanilla" data-price="3.50">
+                  Vanilla - $3.50
+                </option>
+                <option value="chocolate" data-price="4.00">
+                  Chocolate - $4.00
+                </option>
+                <option value="strawberry" data-price="4.00">
+                  Strawberry - $4.00
+                </option>
+                <option value="mint" data-price="4.50">Mint - $4.50</option>
+              </select>
+              <label for="quantity1">Quantity:</label>
+              <input
+                type="number"
+                name="quantity[]"
+                class="quantity"
+                min="1"
+                value="1"
+                onchange="calculateTotal()"
+              />
+            </div>
+          </div>
+          <button type="button" onclick="addProduct()">
+            Add Another Product
+          </button>
+          <label for="name">Your Name:</label>
+          <input type="text" name="name" id="name" required />
+          <label for="email">Your Email:</label>
+          <input type="email" name="email" id="email" required />
+          <label for="total">Total:</label>
+          <input type="text" name="total" id="total" readonly />
+          <input type="submit" value="Place Order" />
+        </form>
+      </div>
+    </div>
+
+    <script>
+      function calculateTotal() {
+        var products = document.getElementsByClassName('product');
+        var total = 0;
+
+        for (var i = 0; i < products.length; i++) {
+          var flavorSelect = products[i].getElementsByClassName('flavor')[0];
+          var quantityInput = products[i].getElementsByClassName('quantity')[0];
+
+          var price = parseFloat(
+            flavorSelect.options[flavorSelect.selectedIndex].getAttribute(
+              'data-price'
+            )
+          );
+          var quantity = parseInt(quantityInput.value);
+          total += price * quantity;
+        }
+
+        document.getElementById('total').value = '$' + total.toFixed(2);
+      }
+
+      function addProduct() {
+        var productsContainer = document.getElementById('products');
+        var productCount =
+          productsContainer.getElementsByClassName('product').length;
+
+        var newProduct = document.createElement('div');
+        newProduct.className = 'product';
+
+        var flavorLabel = document.createElement('label');
+        flavorLabel.htmlFor = 'flavor' + (productCount + 1);
+        flavorLabel.textContent = 'Select Flavor:';
+        newProduct.appendChild(flavorLabel);
+
+        var flavorSelect = document.createElement('select');
+        flavorSelect.name = 'flavor[]';
+        flavorSelect.className = 'flavor';
+        flavorSelect.onchange = calculateTotal;
+        // Adding flavor options dynamically can be done here
+        // For simplicity, let's use the same options as before
+        flavorSelect.innerHTML = document.querySelector('#flavor').innerHTML;
+        newProduct.appendChild(flavorSelect);
+
+        var quantityLabel = document.createElement('label');
+        quantityLabel.htmlFor = 'quantity' + (productCount + 1);
+        quantityLabel.textContent = 'Quantity:';
+        newProduct.appendChild(quantityLabel);
+
+        var quantityInput = document.createElement('input');
+        quantityInput.type = 'number';
+        quantityInput.name = 'quantity[]';
+        quantityInput.className = 'quantity';
+        quantityInput.min = '1';
+        quantityInput.value = '1';
+        quantityInput.onchange = calculateTotal;
+        newProduct.appendChild(quantityInput);
+
+        productsContainer.appendChild(newProduct);
+      }
+    </script>
+  </body>
+</html>
