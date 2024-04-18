@@ -374,6 +374,10 @@
     right: 200px;
     top: 38px;
   }
+
+    .mobile-buy .buynow {
+      width: 186px;
+    }
   // mobile end=======================================
 }
 @media screen and (min-width: 769px) and (max-width: 900px) {
@@ -388,6 +392,10 @@
   }
   .header nav {
     display: none;
+  }
+
+  .mobile-buy .buynow {
+      width: 186px;
   }
 }
 @media screen and (min-width: 900px) and (max-width: 1000px) {

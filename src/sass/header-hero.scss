@@ -96,6 +96,10 @@ ul {
   z-index: 3;
 }
 
+.header li:hover {
+  color: var(--strong-red);
+}
+
 .ice-cream-with {
   font-family: var(--second-family);
   font-weight: 400;
@@ -197,6 +201,11 @@ h1 span {
   text-align: center;
 }
 
+.hero-products-btn a {
+  text-decoration: none;
+  color: var(--white);
+}
+
 .hero-howitsmade-btn {
   border-radius: 20px;
   width: 138px;
@@ -208,6 +217,11 @@ h1 span {
   font-weight: 400;
   font-size: 14px;
   text-align: center;
+}
+
+.hero-howitsmade-btn a {
+  text-decoration: none;
+  color: var(--strong-red);
 }
 
 .hero-howitsmade-btn:hover {
