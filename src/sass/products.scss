@@ -58,6 +58,7 @@
   align-items: center;
   gap: 32px;
   margin-bottom: 60px;
+  padding-left: 0;
 }
 
 .ice-cream {
@@ -567,9 +568,8 @@ li {
 
 // MEDIA SCREEEEEEEEEEEEEEEEEEEEEEEEEEEEEEENS //
 
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 320px) {
   .section-products {
-    padding-left: 0px;
     gap: 60px;
   }
 }
@@ -633,6 +633,10 @@ li {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .section-products {
+    // padding-left: 0px;
+    gap: 60px;
   }
 }
 
