@@ -191,7 +191,7 @@
   width: 90%;
   max-height: 54vh;
   background-color: #fff;
-  border-radius: 5px;
+  border-radius: 15px;
   padding: 0;
   position: absolute;
   overflow-y: auto;
@@ -202,9 +202,9 @@
 .close-modal {
   cursor: pointer;
   position: absolute;
-  // top: 0px;
   right: 20px;
   font-size: 50px;
+  color: var(--white);
 }
 .fix-for-close {
   position: sticky;
@@ -215,4 +215,7 @@
 }
 .space {
   padding: 15px;
+}
+.title-mod-cow {
+  color: var(--white);
 }
