@@ -233,17 +233,10 @@ li {
   left: 0px;
 }
 
-.modal-title {
+.modal-title{
   display: none;
 }
 
-.modal-title-coffee {
-  display: none;
-}
-
-.modal-title-milkshake {
-  display: none;
-}
 
 .ice-cream-story {
   display: flex;
@@ -370,9 +363,7 @@ li {
 }
 
 .modal-title-coffee {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: none;
 }
 
 .coffee-story {
@@ -486,9 +477,7 @@ li {
 }
 
 .modal-title-milkshake {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: none;
 }
 
 .milkshake-story {
