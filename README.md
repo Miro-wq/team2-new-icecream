@@ -12,6 +12,9 @@ This repository contains the source code for a web-based ice cream shop applicat
 - **Interactive UI:** Smooth navigation and user-friendly interface.
 - **Customizable:** Easy to modify and extend with new features.
 
+  ## 🛠 Tools 
+[![My Skills](https://skillicons.dev/icons?i=js,html,css,)](https://skillicons.dev)
+
 ## Getting Started
 
 To get a local copy up and running, follow these steps:
