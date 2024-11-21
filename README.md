@@ -18,7 +18,3 @@
 - **/assets:** Contains images, fonts, and other static assets.
 - **/src:** Main source code directory with SCSS, HTML, and JavaScript files.
 - **.github/workflows:** GitHub Actions workflows for CI/CD.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
